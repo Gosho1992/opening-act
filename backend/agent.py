@@ -581,8 +581,8 @@ def finalize(bid: str) -> dict:
                         f"local connection, size, activity); {len(proven)} have a verified local connection. No picks "
                         f"were filled in automatically" + ("; the picks shown were chosen by the buyer." if taken else "."))
     elif kind == "partial_recommendation":
-        warnings.append(f"Partial recommendation: {len(qual)} of the {rules.MIN_PROVEN} acts needed passed all four "
-                        f"checks. The empty slots are left for the buyer; see the trade-offs.")
+        warnings.append(f"Partial recommendation: {len(qual)} of the {rules.MIN_PROVEN} acts needed passed the booking "
+                        f"gate. The empty slots are left for the buyer; see the trade-offs.")
     prov = [p for p in picks.values() if p and p["qualified"] and p["gate"]["status"] == "provisional"]
     if prov:
         warnings.append("Provisional: " + "; ".join(f"{p['artist_name']} (confirm {', '.join(p['gate']['to_confirm'])})"
