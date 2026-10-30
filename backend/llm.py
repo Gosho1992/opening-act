@@ -106,11 +106,11 @@ def facts_narrative(brief: dict, picks: dict, kind: str, n_qual: int, n_local: i
     head, city = brief.get("headliner_resolved_name") or brief["headliner_name"], brief["city"]
     out = []
     if kind == "recommendation":
-        out.append(f"For {head} in {city} ({brief['venue_capacity']} capacity), {n_qual} acts passed all four checks: "
-                   f"taste fit, local connection, size and activity.")
+        out.append(f"For {head} in {city} ({brief['venue_capacity']} capacity), {n_qual} acts passed the booking gate: "
+                   f"none failed a check on taste fit, local connection, size or activity.")
     elif kind == "partial_recommendation":
-        out.append(f"For {head} in {city}, only {n_qual} of the 3 acts needed passed all four checks (taste fit, local "
-                   f"connection, size, activity), so this is a partial recommendation.")
+        out.append(f"For {head} in {city}, only {n_qual} of the 3 acts needed passed the booking gate (no failed check on "
+                   f"taste fit, local connection, size or activity), so this is a partial recommendation.")
     else:
         out.append(f"For {head} in {city}, no act passed all four checks (taste fit, local connection, size, activity; "
                    f"{n_local} have a verified local connection), so this is a research shortlist with no automatic picks.")
