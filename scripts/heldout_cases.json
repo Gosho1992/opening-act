@@ -1,0 +1,26 @@
+{
+  "_note": "Held-out cases: cities and artists NOT used while developing the verifier. Labels are a draft from public bios (Oct 2026). CHECK EVERY LABEL before running and quoting results; set \"checked\": true when done. expected_local = the act is based in, or comes from / formed in, the city or its metro.",
+  "checked": false,
+  "cases": [
+    ["Alex G", "Philadelphia, Pennsylvania", true, "Philadelphia-area songwriter"],
+    ["Hop Along", "Philadelphia, Pennsylvania", true, "Philadelphia band"],
+    ["The War on Drugs", "Philadelphia, Pennsylvania", true, "formed in Philadelphia"],
+    ["Kurt Vile", "Philadelphia, Pennsylvania", true, "Philadelphia-area musician"],
+    ["Mannequin Pussy", "Philadelphia, Pennsylvania", true, "Philadelphia band"],
+    ["Sheer Mag", "Philadelphia, Pennsylvania", true, "Philadelphia band"],
+    ["Snail Mail", "Philadelphia, Pennsylvania", false, "Baltimore act"],
+    ["Big Thief", "Philadelphia, Pennsylvania", false, "Brooklyn band"],
+    ["Waxahatchee", "Philadelphia, Pennsylvania", false, "Alabama / Kansas City"],
+    ["Soccer Mommy", "Philadelphia, Pennsylvania", false, "Nashville act"],
+    ["Whitney", "Chicago, Illinois", true, "Chicago band"],
+    ["Dehd", "Chicago, Illinois", true, "Chicago band"],
+    ["Ratboys", "Chicago, Illinois", true, "Chicago band"],
+    ["Twin Peaks", "Chicago, Illinois", true, "Chicago band (name collides with the TV show)"],
+    ["Wilco", "Chicago, Illinois", true, "Chicago band"],
+    ["Tennis", "Chicago, Illinois", false, "Denver band"],
+    ["Faye Webster", "Chicago, Illinois", false, "Atlanta"],
+    ["Alex G", "Chicago, Illinois", false, "Philadelphia"],
+    ["Hop Along", "Chicago, Illinois", false, "Philadelphia"],
+    ["Lunar Vacation", "Chicago, Illinois", false, "Atlanta"]
+  ]
+}

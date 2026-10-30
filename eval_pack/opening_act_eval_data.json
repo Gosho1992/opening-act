@@ -1,0 +1,3526 @@
+{
+ "cities": [
+  {
+   "input": {
+    "headliner": "Khruangbin",
+    "city": "Nashville, Tennessee",
+    "venue_capacity": 800,
+    "size_filter": "on (Qloo popularity <= 0.975)",
+    "weights": {
+     "taste": 0.5,
+     "local": 0.3,
+     "practical": 0.2
+    }
+   },
+   "status": "ready",
+   "status_reason": "3 candidates verified as local to the region area",
+   "qloo_calls": [
+    {
+     "purpose": "resolve",
+     "http": 200,
+     "params": {
+      "query": "Khruangbin",
+      "types": "urn:entity:artist",
+      "take": 10
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "BAF6317A-DF94-4C90-92AE-63F86560C21B"
+     }
+    },
+    {
+     "purpose": "discover_baseline",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "take": 50
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "take": 50,
+      "signal.location.query": "Nashville, Tennessee",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "C6AA351E-6E2D-473B-BA63-A0B63AAC037C,58EF0268-C035-4AE8-933E-AC0733C2FFF5,BF4A9D39-D3B6-4276-A3C0-DB005063443C,24BA18BE-62EF-4B7E-99C6-7AA20EB05F28,CBD1CAC1-4039-48B2-8E4B-49F070613152,36BA042E-992C-4D5B-8D79-D28DB96F8404,45DF9957-C182-45CA-BD95-04E2959F8C7C,7E51F8BC-FA1E-4E93-B465-39663E16E7C1,AEBE58E5-CA29-4151-942A-476C48B66322,78040E96-305A-48C7-8C5C-6F18877B6507,1973D09C-4CB9-4D33-ADA0-26B62E2994A9,4C22D1A8-687F-42B4-9595-D92E0CB80F57,BC7F1D4B-4F32-4F7C-B01B-F21E03885A34,8F64F1A0-1010-4ECB-BBAC-C9FEBC0638FF,99BA5941-D3B0-4FEE-B239-1823D285A659"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "1D52D445-110A-4326-BCDB-8D377BEDFABC,9E88B13D-7D76-401B-9007-76C929E2D7C7,02B67CBD-674F-4B94-BED0-61581A3526EE,57478178-BBBC-49A4-8755-5D942B388316,B9D3ECA4-7A4A-4981-86D1-B2A9E88345B7,96CA050B-3003-4E6E-83DA-B39C9494B8C6,7CA7C971-B1A6-4CBD-B6CC-FB39A5BBE227,C304A43C-6D96-4EB2-8F22-F0EA32EFBDB9,36909E8A-C3F3-4104-B501-E09C5E88693E,5DC542C0-8BC9-42C7-B5C7-DC5FACD3BC4A"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "99BA5941-D3B0-4FEE-B239-1823D285A659",
+      "take": 50,
+      "signal.location.query": "Nashville, Tennessee",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "1F602BDB-CF3A-4C71-ADF3-02B9EB952E7E,D2668A4E-9E36-4FB7-B4E6-50EAA0B66067,E19A98C0-6304-4B45-BD9D-5099156E591A,2913FE7A-3A88-44BB-A8F8-8B64A54353E1,63D4CEC9-5C0D-4C6C-A44E-7B9F9EFB53A7,CA7C0145-2B88-4890-8D1A-60CCAEC35E25,F64781DB-F5FF-4BEC-8ACB-34B02DAAA0B6,FA73DF6C-2F70-4F4E-9926-06AF4442334A,83318388-CBBB-4C37-A98A-99B32CD3D35E,A52C5D5B-4653-41F1-91EF-F4D2D88D23CA,FFB69926-20FC-4F0B-B3A3-A9E164CA25A6,2420FA32-EDDF-4201-B44C-F9C5845577D9,511B0691-1D2C-4DE4-8F39-209E16E980FA,24C07E0C-50DA-4982-AA8E-109C77136CA9,F51079A8-1A78-47CB-9D1E-40F77A4B831A,00CA2F23-0FF9-405C-ACD0-8E5442CB6A74,DFC88FA5-7564-4099-984F-37483EAA43EF,8F20BF0C-C87C-4F1D-AFE4-ACBC50667D82,BD0E57B2-9BB7-4B06-9564-92EDD4CB70D3,7568269A-D8BB-4CAF-A4CD-9E74DAFBEDDC"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "CDF1678A-FBA9-4831-A998-B683EB7586CB,8F7C79BD-18AA-4B0C-8572-3EA14869B3CC,F61AEDFA-9DFB-4CEF-B1AA-DBE2C5D28AD3,165C90EB-DF7C-4F52-9625-81462CB5E838,7001DFDA-72AF-44F8-A0DB-DEF6408069BE,0CED544F-4281-4841-88A3-4E62F8E2BF05,9866F5AE-FEB0-43EF-85BC-0B159B74CF40,3B097FE5-67E0-4A32-A746-96F18D581EE0,665F4BC1-DF05-471F-A1B1-F9038591D9B9,2D3A5E81-92E2-48C4-99F7-9AB7AC02C48D,D1CDA4F6-4340-442B-ADAC-45D156EFD310,C6B84AA8-46B2-4589-8088-7B0E3A19ACD0,820BC7B8-CCF3-415E-85D8-B91E99A6CD9F,B74DB2A2-9098-4D84-B12D-2E482A50BFD3,41477B30-8A97-4E47-A847-EA689EEECAE7,3DE9049C-0409-4E3E-83DC-C6D84D637E56,9C4BD2B3-077E-4A58-8018-CB26B9A836E0,FD1EB56E-9BB5-435A-B9E4-83AFD1EF409B,22FE7366-7F67-4B43-B73B-8B6E7A4F2F55,A24335C0-8C73-4E82-96A3-78D8F0E78FD5"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "751653C6-CCFA-4270-A266-97BD959E5FBF,5B2011CB-5186-4A2B-AD3B-4BDF4293B60E,B8ADBD23-15A1-4B58-807E-DED8F4224C73,6485D2A0-0A27-486E-95B3-AC51445AA5CD,62C905BC-D077-4193-9164-46EDAB7884D0,81EECFD1-16B2-4C7D-8CC3-1C10C8DB43E3,67CE25E3-8668-4FFA-A6CA-9A4E807A9E75"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "take": 50,
+      "signal.location.query": "Nashville metropolitan area, Tennessee",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "22E0DEB3-DAFF-418B-9396-C323D47F2BCC,24D02FAB-B6A2-4442-9818-E3148DCF7BE5,0011429A-9B32-4A99-B827-57541E8EE92F,03799700-A776-426A-822B-1242B7849970,6463703C-A28C-4BE0-8BD9-DB0FC159B07E,343A74E8-A42D-4A19-A5A8-F0E9742DD81E,4C22D1A8-687F-42B4-9595-D92E0CB80F57,655C0FC2-B6B2-4534-BF27-D6DF440E2F02,364D77FF-5965-4941-B0C3-42C7834EB61B,98CC41C3-C16E-4ED7-8D90-7843819939CF,54B7F821-3CFA-4464-861D-B4FF25D46494,E954AE47-CC4A-4F90-AB16-060603283759,897FED2E-9CA0-4AC0-903E-70215AD8D78A,EC7422D0-C57B-4A85-98A1-2C92DAF3CEF1,4A58B316-D0A7-460F-B0A6-CC620AD04E93"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "433E0E8D-A087-465A-A9F2-CE38B48EF03D,84DD04C2-D1FC-473A-BC97-C01FD0829030,B39DF687-898A-486C-99C4-630E4DE52E5E,2A6AD842-879C-4721-9DFA-960850BD7379,46CC801F-F1B0-4EDE-85CE-F8A1BF28091C,E8093DDC-B5F3-48D4-9FD5-F556C7BD18F1,4607C481-A992-456F-900E-46AB836351EF,5AB2F1B0-DCAB-4963-9059-6C62D6E55BFD,82A122A2-51BE-4F9D-86E6-79C79222CBAF,282399B6-8FB0-4CF6-958E-E2D7D99C5E9E"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "99BA5941-D3B0-4FEE-B239-1823D285A659",
+      "take": 50,
+      "signal.location.query": "Nashville metropolitan area, Tennessee",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "D6A55D6D-126A-4646-B8CD-4CF594405885,872CA9D2-9A6A-4199-BEA1-DA15B6BAF444,80456541-87FF-4730-87FE-10F387EDB2BD,D2668A4E-9E36-4FB7-B4E6-50EAA0B66067,89FF9BEF-E2F7-4D72-BEB1-68F57FA24512,0679ED9C-A4A8-4D65-9789-A761033B2549,9760B260-08CA-4716-A24D-935AA0EC6B2C,8C2FF13C-D659-4CD6-B630-3E698C829853,CD573028-3E13-4102-B8DD-1423E1CD080F,E5EB9854-5D45-4308-AA3A-2FDAB413FDFE,17347EB1-08C6-42D4-9D76-961EE9CF9DEE,1D1ED1D3-4AB9-484F-8415-898C42DB89AB,97623370-9B1C-444B-8D3F-5A1613B888AB,E56CDDEB-F93E-4D8C-8947-B21ACE3FC547,B74DB2A2-9098-4D84-B12D-2E482A50BFD3,0A325F57-E969-420D-89D7-00E8AF42A30A,7775DB0C-B4DC-4FF9-8A54-12863A95F4D8,512FED17-AF56-47DD-8B96-01D3567B7743,CDC48D01-C857-4690-81C3-899E36A854F7,59DDEB15-F8E6-487C-B698-6718A43904DC"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "404768A6-63E9-4A4F-812F-5CAD91BCF455,35BC8AA3-918E-48FD-92FB-A5ED526CE4C7,209A8252-7A6C-4FB8-8098-B86D6737A434,43E0F3C0-BE6A-42C0-9860-E2A6AE4824E3,71AF5152-7C76-4F7B-BF47-149AA0B14B1C,5E4FFA14-E713-4AB6-8F76-6A5A539063DF,919198AC-D175-49CF-9432-C98EFDA90185,47E94D7B-9DD9-455A-8DD0-B3021FF03BD4,39104A52-7B2D-4862-B269-CC8E839E1C14,8191B0BB-04FD-4CF3-8039-386168D50E8E,B41CCB13-138B-4575-933D-9A67FCD9E2E5,3105F539-9C8F-4BCE-B9F4-8DDCB2C94DD7,A1B25B4A-A720-47C1-9330-D52D6F27783B,3A13F3AD-9DD5-4695-97E9-D968F782EC42,4A9D868A-60C2-4B43-89DE-8C1981B54D32"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "BAF6317A-DF94-4C90-92AE-63F86560C21B",
+      "take": 50,
+      "signal.location.query": "Tennessee",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "24BA18BE-62EF-4B7E-99C6-7AA20EB05F28,C6AA351E-6E2D-473B-BA63-A0B63AAC037C,58EF0268-C035-4AE8-933E-AC0733C2FFF5,BF4A9D39-D3B6-4276-A3C0-DB005063443C,7E51F8BC-FA1E-4E93-B465-39663E16E7C1,36BA042E-992C-4D5B-8D79-D28DB96F8404,CBD1CAC1-4039-48B2-8E4B-49F070613152,45DF9957-C182-45CA-BD95-04E2959F8C7C,AEBE58E5-CA29-4151-942A-476C48B66322,78040E96-305A-48C7-8C5C-6F18877B6507,4C22D1A8-687F-42B4-9595-D92E0CB80F57,1973D09C-4CB9-4D33-ADA0-26B62E2994A9,BC7F1D4B-4F32-4F7C-B01B-F21E03885A34,9E88B13D-7D76-401B-9007-76C929E2D7C7,8F64F1A0-1010-4ECB-BBAC-C9FEBC0638FF"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "FC07BE09-ED83-46BD-AFB1-D5C58D84BDA7,99BA5941-D3B0-4FEE-B239-1823D285A659,1D52D445-110A-4326-BCDB-8D377BEDFABC,02B67CBD-674F-4B94-BED0-61581A3526EE,96CA050B-3003-4E6E-83DA-B39C9494B8C6,36909E8A-C3F3-4104-B501-E09C5E88693E,7CA7C971-B1A6-4CBD-B6CC-FB39A5BBE227,B9D3ECA4-7A4A-4981-86D1-B2A9E88345B7,00CA1D93-3642-49EE-9EBC-74D8870A6DE1,7CB5A4F4-73A2-4A21-BD62-8B1FC5C2311D"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "99BA5941-D3B0-4FEE-B239-1823D285A659",
+      "take": 50,
+      "signal.location.query": "Tennessee",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "D2668A4E-9E36-4FB7-B4E6-50EAA0B66067,E19A98C0-6304-4B45-BD9D-5099156E591A,63D4CEC9-5C0D-4C6C-A44E-7B9F9EFB53A7,2913FE7A-3A88-44BB-A8F8-8B64A54353E1,CA7C0145-2B88-4890-8D1A-60CCAEC35E25,F64781DB-F5FF-4BEC-8ACB-34B02DAAA0B6,FA73DF6C-2F70-4F4E-9926-06AF4442334A,83318388-CBBB-4C37-A98A-99B32CD3D35E,511B0691-1D2C-4DE4-8F39-209E16E980FA,2420FA32-EDDF-4201-B44C-F9C5845577D9,24C07E0C-50DA-4982-AA8E-109C77136CA9,F51079A8-1A78-47CB-9D1E-40F77A4B831A,00CA2F23-0FF9-405C-ACD0-8E5442CB6A74,8F7C79BD-18AA-4B0C-8572-3EA14869B3CC,165C90EB-DF7C-4F52-9625-81462CB5E838,F61AEDFA-9DFB-4CEF-B1AA-DBE2C5D28AD3,2D3A5E81-92E2-48C4-99F7-9AB7AC02C48D,9866F5AE-FEB0-43EF-85BC-0B159B74CF40,3B097FE5-67E0-4A32-A746-96F18D581EE0,665F4BC1-DF05-471F-A1B1-F9038591D9B9"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "C6B84AA8-46B2-4589-8088-7B0E3A19ACD0,7001DFDA-72AF-44F8-A0DB-DEF6408069BE,41477B30-8A97-4E47-A847-EA689EEECAE7,D1CDA4F6-4340-442B-ADAC-45D156EFD310,3DE9049C-0409-4E3E-83DC-C6D84D637E56,820BC7B8-CCF3-415E-85D8-B91E99A6CD9F,B74DB2A2-9098-4D84-B12D-2E482A50BFD3,1E2D6FA2-8DF3-41F5-82C0-FD2E01E0FBCC,FD1EB56E-9BB5-435A-B9E4-83AFD1EF409B,5B2011CB-5186-4A2B-AD3B-4BDF4293B60E,22FE7366-7F67-4B43-B73B-8B6E7A4F2F55,9C4BD2B3-077E-4A58-8018-CB26B9A836E0,751653C6-CCFA-4270-A266-97BD959E5FBF,62C905BC-D077-4193-9164-46EDAB7884D0,67CE25E3-8668-4FFA-A6CA-9A4E807A9E75,A24335C0-8C73-4E82-96A3-78D8F0E78FD5,81EECFD1-16B2-4C7D-8CC3-1C10C8DB43E3,B8ADBD23-15A1-4B58-807E-DED8F4224C73"
+     }
+    }
+   ],
+   "agent_decisions": [
+    "Looking up 'Khruangbin' in Qloo",
+    "Matched headliner to Qloo entity 'Khruangbin'",
+    "Read Khruangbin's Qloo taste profile: 25 tags, e.g. Psychedelic, Funk, Rock, Psychedelic Rock, Eclectic, Laid-Back",
+    "Asking Qloo for artists Khruangbin fans like, weighted to Nashville, Tennessee (city scope)",
+    "Qloo returned 50 artists; checking the top 15 first (9 of them appear only with the location signal)",
+    "Re-checked 15 of 15 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (15 artists)",
+    "Checked 51 sources: 1 verified 'based here now', 0 verified 'from / formed here', 10 verified 'played here', 12 unverified, 12 rejected",
+    "1 of the 3 verified local acts needed. Small local acts often sit lower in Qloo's list, so checking the next 10 for Nashville, Tennessee before widening",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (10 artists)",
+    "Checked 28 sources: 0 verified 'based here now', 0 verified 'from / formed here', 4 verified 'played here', 6 unverified, 8 rejected",
+    "Expanding from the verified local act Ron Gallo: Qloo found 47 new artists their fans like in Nashville, Tennessee; checking the 10 whose Qloo taste tags overlap most with Khruangbin",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (10 artists)",
+    "Checked 25 sources: 0 verified 'based here now', 0 verified 'from / formed here', 2 verified 'played here', 9 unverified, 8 rejected",
+    "1 of the 3 verified local acts needed after checking Qloo's list and the local scene for city, so the search widens to metro",
+    "Asking Qloo for artists Khruangbin fans like, weighted to Nashville metropolitan area, Tennessee (metro scope)",
+    "Qloo returned 50 artists; checking the top 15 first (14 of them appear only with the location signal)",
+    "Re-checked 15 of 15 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a metro-level connection (15 artists)",
+    "Checked 24 sources: 0 verified 'based here now', 0 verified 'from / formed here', 0 verified 'played here', 3 unverified, 6 rejected",
+    "1 of the 3 verified local acts needed. Small local acts often sit lower in Qloo's list, so checking the next 10 for Nashville metropolitan area, Tennessee before widening",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a metro-level connection (10 artists)",
+    "Checked 23 sources: 0 verified 'based here now', 0 verified 'from / formed here', 4 verified 'played here', 2 unverified, 8 rejected",
+    "Expanding from the verified local act Ron Gallo: Qloo found 35 new artists their fans like in Nashville metropolitan area, Tennessee; checking the 10 whose Qloo taste tags overlap most with Khruangbin",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a metro-level connection (10 artists)",
+    "Checked 17 sources: 0 verified 'based here now', 0 verified 'from / formed here', 1 verified 'played here', 2 unverified, 4 rejected",
+    "1 of the 3 verified local acts needed after checking Qloo's list and the local scene for metro, so the search widens to region",
+    "Asking Qloo for artists Khruangbin fans like, weighted to Tennessee (region scope)",
+    "Qloo returned 50 artists; checking the top 15 first (9 of them appear only with the location signal)",
+    "Re-checked 15 of 15 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a region-level connection (15 artists)",
+    "Checked 48 sources: 0 verified 'based here now', 0 verified 'from / formed here', 8 verified 'played here', 10 unverified, 15 rejected",
+    "1 of the 3 verified local acts needed. Small local acts often sit lower in Qloo's list, so checking the next 10 for Tennessee before widening",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a region-level connection (10 artists)",
+    "Checked 34 sources: 1 verified 'based here now', 0 verified 'from / formed here', 7 verified 'played here', 8 unverified, 7 rejected",
+    "Expanding from the verified local act Ron Gallo: Qloo found 38 new artists their fans like in Tennessee; checking the 10 whose Qloo taste tags overlap most with Khruangbin",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a region-level connection (10 artists)",
+    "Checked 40 sources: 1 verified 'based here now', 1 verified 'from / formed here', 4 verified 'played here', 12 unverified, 13 rejected",
+    "3 of 82 live candidates are verified as local to the region area (need 3)",
+    "Web searches: 10 paid, 154 from the cache (budget 100 per run)"
+   ],
+   "candidates_considered": 82,
+   "top_15_as_ranked": [
+    {
+     "artist": "Ron Gallo",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 17,
+     "rank_without_city": null,
+     "qloo_popularity": 0.921,
+     "spotify_monthly_listeners": 358650,
+     "tag_overlap_with_headliner": 0.0,
+     "shared_tags": [],
+     "scores": {
+      "taste": 0.47,
+      "local": 1.0,
+      "size": 0.9,
+      "total": 0.715
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "based_here",
+      "source": "public",
+      "quote": "Meet Ron Gallo, the Nashville-based musician voicing a revv’d up headfirst agenda – HERO",
+      "url": "https://hero-magazine.com/article/60622/meet-ron-gallo-the-nashville-based-musician-voicing-a-revvd-up-headfirst-agenda"
+     },
+     "played_city": {
+      "quote": "Ron Gallo - Live Concert at Nashville Sunday Night",
+      "url": "https://www.youtube.com/watch?v=U96V3CNvDqo"
+     }
+    },
+    {
+     "artist": "Becca Mancari",
+     "found_via": "scene",
+     "scene_seed": "Ron Gallo",
+     "qloo_rank_in_its_list": 23,
+     "rank_without_city": null,
+     "qloo_popularity": 0.791,
+     "spotify_monthly_listeners": 192847,
+     "tag_overlap_with_headliner": 0.045,
+     "shared_tags": [
+      "Rock"
+     ],
+     "scores": {
+      "taste": 0.045,
+      "local": 1.0,
+      "size": 0.9,
+      "total": 0.503
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "based_here",
+      "source": "public",
+      "quote": "Hi my name is Becca Mancari, and I am an Indie musician living in Nashville, TN.",
+      "url": "https://campfiretales.uk/country/hello-becca-mancari"
+     },
+     "played_city": null
+    },
+    {
+     "artist": "TWEN",
+     "found_via": "scene",
+     "scene_seed": "Ron Gallo",
+     "qloo_rank_in_its_list": 50,
+     "rank_without_city": null,
+     "qloo_popularity": 0.715,
+     "spotify_monthly_listeners": 2513,
+     "tag_overlap_with_headliner": 0.083,
+     "shared_tags": [
+      "Psychedelic",
+      "Atmospheric"
+     ],
+     "scores": {
+      "taste": 0.083,
+      "local": 0.8,
+      "size": 0.9,
+      "total": 0.462
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "formed_here",
+      "source": "musicbrainz",
+      "quote": "Begin area: Nashville",
+      "url": "https://musicbrainz.org/artist/9987f4cb-15a4-492d-964b-7afb5bf05470"
+     },
+     "played_city": null
+    },
+    {
+     "artist": "Hermanos Gutiérrez",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 5,
+     "rank_without_city": 11,
+     "qloo_popularity": 0.965,
+     "spotify_monthly_listeners": 190913,
+     "tag_overlap_with_headliner": 0.364,
+     "shared_tags": [
+      "Psychedelic",
+      "Instrumental",
+      "Psychedelic Rock",
+      "Eclectic",
+      "Adventurous",
+      "Open-Minded"
+     ],
+     "scores": {
+      "taste": 0.705,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.623
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Hermanos Gutiérrez performing live in the Sonic Cathedral at WNXP Nashville.",
+      "url": "https://www.youtube.com/watch?v=peanjNBbU8w"
+     }
+    },
+    {
+     "artist": "The Nude Party",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 6,
+     "rank_without_city": null,
+     "qloo_popularity": 0.858,
+     "spotify_monthly_listeners": 145426,
+     "tag_overlap_with_headliner": 0.12,
+     "shared_tags": [
+      "Rock",
+      "Psychedelic Rock",
+      "Psychedelic"
+     ],
+     "scores": {
+      "taste": 0.6,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.57
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "The Nude Party performing live in the Sonic Cathedral at WNXP Nashville.",
+      "url": "https://www.youtube.com/watch?v=SwN3N7V43tw"
+     }
+    },
+    {
+     "artist": "Neal Francis",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 19,
+     "rank_without_city": null,
+     "qloo_popularity": 0.828,
+     "spotify_monthly_listeners": 62310,
+     "tag_overlap_with_headliner": 0.28,
+     "shared_tags": [
+      "Funk",
+      "Rock",
+      "Soul",
+      "Funky",
+      "Groovy",
+      "Psychedelic Soul"
+     ],
+     "scores": {
+      "taste": 0.561,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.536
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Neal Francis performs live from 3rd and Lindsley on Lightning 100 for Nashville Sunday Night.",
+      "url": "https://www.youtube.com/watch?v=gJ7WtZdnrn4"
+     }
+    },
+    {
+     "artist": "Cory Wong",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 22,
+     "rank_without_city": null,
+     "qloo_popularity": 0.934,
+     "spotify_monthly_listeners": 401926,
+     "tag_overlap_with_headliner": 0.24,
+     "shared_tags": [
+      "Funk",
+      "Soul",
+      "Funky",
+      "Groovy",
+      "Instrumental"
+     ],
+     "scores": {
+      "taste": 0.521,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.53
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Sam Evian",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 12,
+     "rank_without_city": null,
+     "qloo_popularity": 0.902,
+     "spotify_monthly_listeners": 228681,
+     "tag_overlap_with_headliner": 0.12,
+     "shared_tags": [
+      "Rock",
+      "Laid-Back"
+     ],
+     "scores": {
+      "taste": 0.547,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.529
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Sam Evian performing live in the Sonic Cathedral at WNXP Nashville.",
+      "url": "https://www.youtube.com/watch?v=fIsQ-WLp56g"
+     }
+    },
+    {
+     "artist": "Kikagaku Moyo",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 2,
+     "rank_without_city": 14,
+     "qloo_popularity": 0.948,
+     "spotify_monthly_listeners": 281551,
+     "tag_overlap_with_headliner": 0.24,
+     "shared_tags": [
+      "Psychedelic",
+      "Psychedelic Rock",
+      "Open-Minded",
+      "Adventurous"
+     ],
+     "scores": {
+      "taste": 0.696,
+      "local": 0.0,
+      "size": 0.9,
+      "total": 0.528
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Brittany Howard",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 3,
+     "rank_without_city": null,
+     "qloo_popularity": 0.935,
+     "spotify_monthly_listeners": 920011,
+     "tag_overlap_with_headliner": 0.04,
+     "shared_tags": [
+      "Soul"
+     ],
+     "scores": {
+      "taste": 0.616,
+      "local": 0.3,
+      "size": 0.6,
+      "total": 0.518
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "From Alabama Shakes to sick-ass breakdowns: multiple Grammy-winning alt-and-blues-rock musician Brittany Howard played her first-ever show with her new hardcore band, Kumite, this weekend in Nashville, Tennessee.",
+      "url": "https://www.revolvermag.com/music/see-alabama-shakes-brittany-howard-debut-new-hardcore-band-kumite"
+     }
+    },
+    {
+     "artist": "Louis Prince",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 18,
+     "rank_without_city": null,
+     "qloo_popularity": 0.293,
+     "spotify_monthly_listeners": 37618,
+     "tag_overlap_with_headliner": 0.043,
+     "shared_tags": [
+      "Soul"
+     ],
+     "scores": {
+      "taste": 0.475,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.508
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Mdou Moctar",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 8,
+     "rank_without_city": null,
+     "qloo_popularity": 0.938,
+     "spotify_monthly_listeners": 79735,
+     "tag_overlap_with_headliner": 0.13,
+     "shared_tags": [
+      "Psychedelic Rock",
+      "Psychedelic"
+     ],
+     "scores": {
+      "taste": 0.592,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.506
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "mcbaise",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 2,
+     "rank_without_city": null,
+     "qloo_popularity": 0.873,
+     "spotify_monthly_listeners": 95523,
+     "tag_overlap_with_headliner": 0.12,
+     "shared_tags": [
+      "Rock",
+      "Psychedelic Rock",
+      "Psychedelic"
+     ],
+     "scores": {
+      "taste": 0.614,
+      "local": 0.0,
+      "size": 0.9,
+      "total": 0.487
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "J Lloyd",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 1,
+     "rank_without_city": 10,
+     "qloo_popularity": 0.865,
+     "spotify_monthly_listeners": 75604,
+     "tag_overlap_with_headliner": 0.0,
+     "shared_tags": [],
+     "scores": {
+      "taste": 0.6,
+      "local": 0.0,
+      "size": 0.9,
+      "total": 0.48
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Scary Pockets",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 25,
+     "rank_without_city": null,
+     "qloo_popularity": 0.853,
+     "spotify_monthly_listeners": 381095,
+     "tag_overlap_with_headliner": 0.2,
+     "shared_tags": [
+      "Funk",
+      "Soul",
+      "Funky",
+      "Groovy"
+     ],
+     "scores": {
+      "taste": 0.449,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.48
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "SCARY POCKETS TOUR STARTS THURSDAY IN NASHVILLE let's gooooo.",
+      "url": "https://www.instagram.com/p/Cx77R_fLepW"
+     }
+    }
+   ],
+   "sample_rejected_sources": [
+    {
+     "artist": "Ron Gallo",
+     "url": "https://www.bandsintown.com/a/624584-ron-gallo",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Ron Gallo",
+     "url": "http://rongallomusic.com/tour",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "TWEN",
+     "url": "https://www.ticketmaster.com/twen-tickets/artist/2534586",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "TWEN",
+     "url": "https://www.bandsintown.com/a/811507-twen",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "TWEN",
+     "url": "https://bigtakeover.com/interviews/interview-twen",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "Hermanos Gutiérrez",
+     "url": "https://en.wikipedia.org/wiki/Hermanos_Guti%C3%A9rrez",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "The Nude Party",
+     "url": "https://www.ticketmaster.com/the-nude-party-tickets/artist/2316321",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "The Nude Party",
+     "url": "https://en.wikipedia.org/wiki/The_Nude_Party",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "The Nude Party",
+     "url": "https://www.thebasementnashville.com/tm-attraction/the-nude-party",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "Neal Francis",
+     "url": "https://www.nealfrancis.com/bio",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "Cory Wong",
+     "url": "https://www.youtube.com/watch?v=qmNEhOKfZ9A",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "Sam Evian",
+     "url": "https://www.youtube.com/watch?v=BmdYvLJHgpI",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    }
+   ],
+   "booking_brief": {
+    "picks": {
+     "primary": "Ron Gallo",
+     "backup": "Becca Mancari",
+     "alternative": "TWEN"
+    },
+    "warnings": [],
+    "narrative": "The booking brief features Khruangbin as the headliner in Nashville, Tennessee, at a venue with a capacity of 800. Ron Gallo is the primary support act, ranked 17 with verified local evidence of his presence and performances in the area. Becca Mancari, another local artist, is a backup option, while TWEN is an alternative choice, both having ties to Ron Gallo. Gallo has 358,650 monthly listeners, Mancari has 192,847, and TWEN has 2,513. Availability, fee, and headliner agent approval are unknown.",
+    "narrative_note": "Generated before the 29 Oct fix that stops scene-found picks being described by a Qloo rank."
+   },
+   "four_way_comparison": {
+    "scope_checked": "Tennessee",
+    "popularity_limit": 0.975,
+    "lists": {
+     "LLM on its own": [
+      {
+       "artist": "The Lone Bellow",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Maggie Rose",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "The Wild Feathers",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Treetop Flyers",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Kelsey Waldon",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Nikki Lane",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "The Black Lillies",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Yola",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ],
+     "Qloo, no city": [
+      {
+       "artist": "Arc De Soleil",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Glass Beams",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Mildlife",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Common Saints",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Robohands",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Thee Sacred Souls",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "SAULT",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "KOKOROKO",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ],
+     "Qloo with the city": [
+      {
+       "artist": "Vulfpeck",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Black Pumas",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Hiatus Kaiyote",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "SAULT",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Kikagaku Moyo",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Brittany Howard",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Mk.gee",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Glass Beams",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ],
+     "Opening Act": [
+      {
+       "artist": "Ron Gallo",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Becca Mancari",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "TWEN",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Hermanos Gutiérrez",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "The Nude Party",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Neal Francis",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Cory Wong",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Sam Evian",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ]
+    },
+    "summary": {
+     "LLM on its own": {
+      "n": 8,
+      "verified_local": 3,
+      "played_city_only": 1,
+      "too_big_for_room": 0,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 3,
+      "not_checked_budget": 0
+     },
+     "Qloo, no city": {
+      "n": 8,
+      "verified_local": 0,
+      "played_city_only": 0,
+      "too_big_for_room": 1,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 0,
+      "not_checked_budget": 0
+     },
+     "Qloo with the city": {
+      "n": 8,
+      "verified_local": 0,
+      "played_city_only": 2,
+      "too_big_for_room": 4,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 0,
+      "not_checked_budget": 0
+     },
+     "Opening Act": {
+      "n": 8,
+      "verified_local": 3,
+      "played_city_only": 4,
+      "too_big_for_room": 0,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 3,
+      "not_checked_budget": 0
+     }
+    }
+   }
+  },
+  {
+   "input": {
+    "headliner": "Japanese Breakfast",
+    "city": "Atlanta, Georgia",
+    "venue_capacity": 800,
+    "size_filter": "on (Qloo popularity <= 0.975)",
+    "weights": {
+     "taste": 0.5,
+     "local": 0.3,
+     "practical": 0.2
+    }
+   },
+   "status": "ready",
+   "status_reason": "3 candidates verified as local to the city area",
+   "qloo_calls": [
+    {
+     "purpose": "resolve",
+     "http": 200,
+     "params": {
+      "query": "Japanese Breakfast",
+      "types": "urn:entity:artist",
+      "take": 10
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "AA21934D-3A6E-4973-983F-28604C44E3AC"
+     }
+    },
+    {
+     "purpose": "discover_baseline",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "take": 50
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "AA21934D-3A6E-4973-983F-28604C44E3AC",
+      "take": 50,
+      "signal.location.query": "Atlanta, Georgia",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "946CF1F8-E668-4617-9C91-464C10ACD492,77F578B6-F91E-4D61-BB07-2633B92291AA,B6A5F639-EFEB-4BF1-9630-D6DC1B1180DA,22FE7366-7F67-4B43-B73B-8B6E7A4F2F55,B0983E75-B0AF-41A6-844C-147DECDBC07E,EB3382E2-6A89-427D-BB88-BAA4A5843E44,B8AC3630-1948-4D6D-B009-84A2518EA21D,8191B0BB-04FD-4CF3-8039-386168D50E8E,5B855CE4-A9B4-4D78-A0C8-E7B36C9E17EA,F535E2E1-3D99-4F12-8F29-306ACA243558,F9FF5BDD-0D59-4560-8861-D1B1D2580ABB,729724D1-7184-4385-A63D-5241F61E8D8F,1B3FFFDF-8504-4B6D-8232-F06652276F1F,BFAF3627-214B-4863-A854-148B59D532A9,5FB0A7DA-C7F0-487B-80C4-CA893D1BC56B"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "C3339CE1-9435-430E-AEBA-5C41BC666FC7,F490C0BD-5FDB-413F-90C8-9F13584EACB2,4CE60D14-B414-4163-97C3-C1E51108ED90,08879395-5D66-4462-8997-5884E9FDEEDA,A157CD12-3E7D-42FD-9A2F-FAFD71960CF6,7FF9A9FB-0232-4B71-B21E-3026CA9619AD,439CE622-4BD3-49EB-8DE1-8191FA638898,98C82091-C3D6-4CE9-B750-28F63C0420FA,7E3F5027-C465-445A-9A8E-7D606F0BAD41,118E32E9-C035-4D1C-97B6-6B83EF9DE5B0"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "B6A5F639-EFEB-4BF1-9630-D6DC1B1180DA,F535E2E1-3D99-4F12-8F29-306ACA243558",
+      "take": 50,
+      "signal.location.query": "Atlanta, Georgia",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "DD750205-6046-4B45-AE9D-37F4E6E33851,1924D7DA-1122-43DD-AF7A-BAC0B0A65EC2,3FA655FD-C2B3-4B98-841F-13576854BDC9,A52C5D5B-4653-41F1-91EF-F4D2D88D23CA,F61AEDFA-9DFB-4CEF-B1AA-DBE2C5D28AD3,4B042506-4313-4D89-9AD2-AD81DFF655FA,634B9796-EDC6-4DB2-BA59-C883CA4B2759,1FC41E8B-E2F3-4E0B-95BB-38840ACC43AD,B086A801-980D-4B10-84D4-B543765D6D18,27058007-0CA4-4480-A826-D10980ED459F,1C915653-F7CC-42A1-A3EA-013F77499988,A5D17C56-2B80-4DD3-85F1-4930430A00A2,CDF1678A-FBA9-4831-A998-B683EB7586CB,5F522BBF-F983-4E0C-B44B-39426491F268,8410A68F-9513-45B7-BBEA-516A5C2AB6B9,8C68644C-25BA-4513-B0C1-B74ACBD84EC3,0AA36A70-AE58-4DE3-9A25-A0EF973D69C1,F8F0C9B9-552C-48BE-882B-A8AE89FF9B70,43B4C7E9-3C9B-44FF-8075-144ACCCAF26D,25F6A6A6-6EF0-4E8A-89AE-C0866A744724"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "AD82D917-4D32-4CE6-89B1-F6AA8E014E7F,5222E174-88CE-4C01-BE33-0ED5E8321E87,7EB77FDE-3AFF-4598-B1C1-BA379CF4D518,F05634EA-FD5A-4A6D-8BAD-561F70DCB4E2,FC0D1C29-508E-4B95-A11B-34E57B44054C,B8ADBD23-15A1-4B58-807E-DED8F4224C73,05915F60-BBA3-4882-82A6-D03D58FDD620,22214CBA-6379-443D-AE6C-3389720E26B1,6720CD9E-29CC-4162-B035-75136FE7DD4A,B14834FE-A071-4EFD-B726-8857254C6B6E"
+     }
+    }
+   ],
+   "agent_decisions": [
+    "Looking up 'Japanese Breakfast' in Qloo",
+    "Matched headliner to Qloo entity 'Japanese Breakfast'",
+    "Read Japanese Breakfast's Qloo taste profile: 24 tags, e.g. Dream Pop, Indie Rock, Indie, Indie Pop, Dedicated, Passionate",
+    "Asking Qloo for artists Japanese Breakfast fans like, weighted to Atlanta, Georgia (city scope)",
+    "Qloo returned 50 artists; checking the top 15 first (7 of them appear only with the location signal)",
+    "Re-checked 15 of 15 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (15 artists)",
+    "Checked 51 sources: 6 verified 'based here now', 3 verified 'from / formed here', 3 verified 'played here', 11 unverified, 15 rejected",
+    "2 of the 3 verified local acts needed. Small local acts often sit lower in Qloo's list, so checking the next 10 for Atlanta, Georgia before widening",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (10 artists)",
+    "Checked 33 sources: 0 verified 'based here now', 0 verified 'from / formed here', 2 verified 'played here', 8 unverified, 13 rejected",
+    "Expanding from the verified local acts Lunar Vacation, girlpuppy: Qloo found 30 new artists their fans like in Atlanta, Georgia; checking the 10 whose Qloo taste tags overlap most with Japanese Breakfast",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (10 artists)",
+    "Checked 20 sources: 3 verified 'based here now', 0 verified 'from / formed here', 1 verified 'played here', 6 unverified, 4 rejected",
+    "3 of 35 live candidates are verified as local to the city area (need 3)",
+    "Web searches: 10 paid, 60 from the cache (budget 100 per run)"
+   ],
+   "candidates_considered": 35,
+   "top_15_as_ranked": [
+    {
+     "artist": "Lunar Vacation",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 3,
+     "rank_without_city": null,
+     "qloo_popularity": 0.892,
+     "spotify_monthly_listeners": 225331,
+     "tag_overlap_with_headliner": 0.545,
+     "shared_tags": [
+      "Indie",
+      "Indie Pop",
+      "Dream Pop",
+      "Indie Rock",
+      "Dreamy",
+      "Melodic"
+     ],
+     "scores": {
+      "taste": 0.804,
+      "local": 1.0,
+      "size": 0.9,
+      "total": 0.882
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "based_here",
+      "source": "public",
+      "quote": "Reaching for the stars: Atlanta-based band Lunar Vacation dreams big",
+      "url": "https://www.redandblack.com/culture/reaching-for-the-stars-atlanta-based-band-lunar-vacation-dreams-big/article_5a5f06fa-f8ac-11e9-8b79-db46fb4a5959.html"
+     },
+     "played_city": null
+    },
+    {
+     "artist": "girlpuppy",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 10,
+     "rank_without_city": null,
+     "qloo_popularity": 0.759,
+     "spotify_monthly_listeners": 5200,
+     "tag_overlap_with_headliner": 0.417,
+     "shared_tags": [
+      "Indie",
+      "Indie Pop",
+      "Indie Rock",
+      "Emotive",
+      "Melodic",
+      "Intimate"
+     ],
+     "scores": {
+      "taste": 0.675,
+      "local": 1.0,
+      "size": 0.9,
+      "total": 0.818
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "based_here",
+      "source": "public",
+      "quote": "In the Atlanta-based musician's case, it's her jangle-pop alias Girlpuppy, which found itself thriving after a COVID layoff.",
+      "url": "https://www.thefader.com/2021/06/30/girlpuppy-as-much-as-i-can"
+     },
+     "played_city": {
+      "quote": "Apr 11 2026 girlpuppy at Center Stage, Atlanta, GA, USA y, Venue: The Loft at Center Stage, Atlanta, GA, USA",
+      "url": "https://www.setlist.fm/setlists/girlpuppy-23f004c7.html"
+     }
+    },
+    {
+     "artist": "Mamalarky",
+     "found_via": "scene",
+     "scene_seed": "Lunar Vacation, girlpuppy",
+     "qloo_rank_in_its_list": 20,
+     "rank_without_city": null,
+     "qloo_popularity": 0.808,
+     "spotify_monthly_listeners": 13483,
+     "tag_overlap_with_headliner": 0.625,
+     "shared_tags": [
+      "Indie Rock",
+      "Indie",
+      "Indie Pop",
+      "Dream Pop",
+      "Dreamy",
+      "Experimental"
+     ],
+     "scores": {
+      "taste": 0.625,
+      "local": 1.0,
+      "size": 0.9,
+      "total": 0.792
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "based_here",
+      "source": "musicbrainz",
+      "quote": "Area: Atlanta",
+      "url": "https://musicbrainz.org/artist/83ad497d-a191-4f68-b5a4-dd9ac046ac28"
+     },
+     "played_city": null
+    },
+    {
+     "artist": "Okey Dokey",
+     "found_via": "scene",
+     "scene_seed": "Lunar Vacation, girlpuppy",
+     "qloo_rank_in_its_list": 25,
+     "rank_without_city": null,
+     "qloo_popularity": 0.765,
+     "spotify_monthly_listeners": 198740,
+     "tag_overlap_with_headliner": 0.75,
+     "shared_tags": [
+      "Indie Pop",
+      "Indie",
+      "Indie Rock"
+     ],
+     "scores": {
+      "taste": 0.75,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.645
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "sasami",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 2,
+     "rank_without_city": 5,
+     "qloo_popularity": 0.933,
+     "spotify_monthly_listeners": 126323,
+     "tag_overlap_with_headliner": 0.333,
+     "shared_tags": [
+      "Indie Rock",
+      "Experimental",
+      "Intimate",
+      "Expressive",
+      "Dream Pop",
+      "Dedicated"
+     ],
+     "scores": {
+      "taste": 0.733,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.637
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Photos of Sasami with Zulu performing at The Masquerade in Atlanta on March 22, 2022.",
+      "url": "https://www.atlantamusicguide.com/sasami-with-zulu-at-the-masquerade-03-22-22"
+     }
+    },
+    {
+     "artist": "Dehd",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 5,
+     "rank_without_city": null,
+     "qloo_popularity": 0.939,
+     "spotify_monthly_listeners": 325872,
+     "tag_overlap_with_headliner": 0.435,
+     "shared_tags": [
+      "Indie Rock",
+      "Dream Pop",
+      "Dreamy",
+      "Melodic",
+      "Intimate",
+      "Engaging"
+     ],
+     "scores": {
+      "taste": 0.717,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.629
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Rostam",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 8,
+     "rank_without_city": null,
+     "qloo_popularity": 0.941,
+     "spotify_monthly_listeners": 3238,
+     "tag_overlap_with_headliner": null,
+     "shared_tags": [],
+     "scores": {
+      "taste": 0.872,
+      "local": 0.0,
+      "size": 0.9,
+      "total": 0.616
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Caroline Rose",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 4,
+     "rank_without_city": 46,
+     "qloo_popularity": 0.957,
+     "spotify_monthly_listeners": 450151,
+     "tag_overlap_with_headliner": 0.25,
+     "shared_tags": [
+      "Indie Pop",
+      "Indie",
+      "Indie Rock",
+      "Engaging",
+      "Expressive"
+     ],
+     "scores": {
+      "taste": 0.65,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.58
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Caroline Rose (solo) @ The Earl, Atlanta, GA on 3/11/2025 (Full Concert)",
+      "url": "https://www.youtube.com/watch?v=j2CvNgfaItc"
+     }
+    },
+    {
+     "artist": "Miya Folick",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 7,
+     "rank_without_city": 26,
+     "qloo_popularity": 0.938,
+     "spotify_monthly_listeners": 226796,
+     "tag_overlap_with_headliner": 0.435,
+     "shared_tags": [
+      "Indie",
+      "Indie Pop",
+      "Indie Rock",
+      "Emotive",
+      "Expressive",
+      "Engaging"
+     ],
+     "scores": {
+      "taste": 0.707,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.564
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Squirrel Flower",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 16,
+     "rank_without_city": 16,
+     "qloo_popularity": 0.906,
+     "spotify_monthly_listeners": 67379,
+     "tag_overlap_with_headliner": 0.417,
+     "shared_tags": [
+      "Dream Pop",
+      "Indie Rock",
+      "Emotive",
+      "Melodic",
+      "Intimate",
+      "Expressive"
+     ],
+     "scores": {
+      "taste": 0.593,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.551
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Squirrel Flower swung into Atlanta's Masquerade for her first headlining dates behind her 2021 release Planet (i).",
+      "url": "https://www.melodicmag.com/reviews/live-events/squirrel-flower-brings-the-world-of-planet-i-to-atlanta"
+     }
+    },
+    {
+     "artist": "Better Oblivion Community Center",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 15,
+     "rank_without_city": 37,
+     "qloo_popularity": 0.961,
+     "spotify_monthly_listeners": 452236,
+     "tag_overlap_with_headliner": 0.478,
+     "shared_tags": [
+      "Indie",
+      "Indie Rock",
+      "Melodic",
+      "Intimate",
+      "Expressive",
+      "Engaging"
+     ],
+     "scores": {
+      "taste": 0.656,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.538
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Molly Burch",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 21,
+     "rank_without_city": null,
+     "qloo_popularity": 0.915,
+     "spotify_monthly_listeners": 236257,
+     "tag_overlap_with_headliner": 0.208,
+     "shared_tags": [
+      "Indie",
+      "Melodic",
+      "Intimate",
+      "Expressive",
+      "Introspective"
+     ],
+     "scores": {
+      "taste": 0.518,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.529
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Molly Burch at The Masquerade, Atlanta, GA, USA Artist: Molly Burch, Tour: Day Dreamer, Venue: Purgatory at The Masquerade, Atlanta, GA, USA",
+      "url": "https://www.setlist.fm/setlists/molly-burch-33c07cf9.html"
+     }
+    },
+    {
+     "artist": "Kississippi",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 25,
+     "rank_without_city": null,
+     "qloo_popularity": 0.883,
+     "spotify_monthly_listeners": 41983,
+     "tag_overlap_with_headliner": 0.478,
+     "shared_tags": [
+      "Indie Pop",
+      "Indie",
+      "Indie Rock",
+      "Emotive",
+      "Dreamy",
+      "Melodic"
+     ],
+     "scores": {
+      "taste": 0.612,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.516
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Vagabon",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 6,
+     "rank_without_city": null,
+     "qloo_popularity": 0.926,
+     "spotify_monthly_listeners": 254668,
+     "tag_overlap_with_headliner": 0.304,
+     "shared_tags": [
+      "Indie Rock",
+      "Emotive",
+      "Expressive",
+      "Intimate",
+      "Passionate"
+     ],
+     "scores": {
+      "taste": 0.657,
+      "local": 0.0,
+      "size": 0.9,
+      "total": 0.509
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Palehound",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 22,
+     "rank_without_city": null,
+     "qloo_popularity": 0.94,
+     "spotify_monthly_listeners": 109200,
+     "tag_overlap_with_headliner": 0.565,
+     "shared_tags": [
+      "Indie Rock",
+      "Indie",
+      "Emotive",
+      "Melodic",
+      "Engaging",
+      "Intimate"
+     ],
+     "scores": {
+      "taste": 0.657,
+      "local": 0.0,
+      "size": 0.9,
+      "total": 0.509
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    }
+   ],
+   "sample_rejected_sources": [
+    {
+     "artist": "Lunar Vacation",
+     "url": "https://www.bandsintown.com/a/14123239-lunar-vacation",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "girlpuppy",
+     "url": "https://seatgeek.com/girlpuppy-tickets/atlanta",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Okey Dokey",
+     "url": "https://seatgeek.com/okey-dokey-tickets/atlanta",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "sasami",
+     "url": "https://music.apple.com/us/album/sasami/1444433794",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Dehd",
+     "url": "https://www.ticketmaster.com/dehd-tickets/artist/2667209",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Rostam",
+     "url": "https://seatgeek.com/rostam-tickets/atlanta",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Caroline Rose",
+     "url": "https://www.axs.com/sg/events/1673828?skin=sinclair&staticDetails=staticDetails",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Caroline Rose",
+     "url": "https://open.spotify.com/concert/1ntEbjzF5TdDUOExgIUbFy",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Miya Folick",
+     "url": "https://seatgeek.com/miya-folick-tickets/atlanta",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Squirrel Flower",
+     "url": "https://badearl.com/show/squirrel-flower-the-earl",
+     "reason": "About a different person or thing named 'Squirrel Flower'"
+    },
+    {
+     "artist": "Molly Burch",
+     "url": "https://www.bandsintown.com/a/9771889-molly-burch",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Vagabon",
+     "url": "https://www.facebook.com/VagabonBrew/posts/january-6th-were-heading-to-atlanta-smithsoldebar-to-share-a-night-of-good-music/142957061423754",
+     "reason": "'Vagabon' only appears as part of a longer name"
+    }
+   ],
+   "booking_brief": {
+    "picks": {
+     "primary": "Lunar Vacation",
+     "backup": "girlpuppy",
+     "alternative": "Mamalarky"
+    },
+    "warnings": [],
+    "narrative": "The booking brief features Japanese Breakfast as the headliner in Atlanta, Georgia, at a venue with a capacity of 800. The primary support act is Lunar Vacation, an Atlanta-based band with a Qloo rank of 3, known for their indie and dream pop sound. Backup support is provided by girlpuppy, also local, with a Qloo rank of 10 and a history of performances in the area. An alternative option is Mamalarky, who recently relocated to Atlanta and has a Qloo rank of 20. Availability, fee, and headliner agent approval are unknown.",
+    "narrative_note": "Generated before the 29 Oct fix that stops scene-found picks being described by a Qloo rank."
+   },
+   "four_way_comparison": {
+    "scope_checked": "Atlanta, Georgia",
+    "popularity_limit": 0.975,
+    "lists": {
+     "LLM on its own": [
+      {
+       "artist": "Faye Webster",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Pinegrove",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Soccer Mommy",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "The Districts",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Mitski",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Alvvays",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Snail Mail",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Japanese Breakfast",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      }
+     ],
+     "Qloo, no city": [
+      {
+       "artist": "Soccer Mommy",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Mitski",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Snail Mail",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Alvvays",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "sasami",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "beabadoobee",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Samia",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Jay Som",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ],
+     "Qloo with the city": [
+      {
+       "artist": "Faye Webster",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Soccer Mommy",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Mitski",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Lucy Dacus",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Big Thief",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Phoebe Bridgers",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Jay Som",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "sasami",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ],
+     "Opening Act": [
+      {
+       "artist": "Lunar Vacation",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "girlpuppy",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Mamalarky",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Okey Dokey",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "sasami",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Dehd",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Rostam",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Caroline Rose",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ]
+    },
+    "summary": {
+     "LLM on its own": {
+      "n": 8,
+      "verified_local": 1,
+      "played_city_only": 2,
+      "too_big_for_room": 7,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 0,
+      "not_checked_budget": 0
+     },
+     "Qloo, no city": {
+      "n": 8,
+      "verified_local": 0,
+      "played_city_only": 4,
+      "too_big_for_room": 5,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 0,
+      "not_checked_budget": 0
+     },
+     "Qloo with the city": {
+      "n": 8,
+      "verified_local": 1,
+      "played_city_only": 5,
+      "too_big_for_room": 6,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 0,
+      "not_checked_budget": 0
+     },
+     "Opening Act": {
+      "n": 8,
+      "verified_local": 3,
+      "played_city_only": 2,
+      "too_big_for_room": 0,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 3,
+      "not_checked_budget": 0
+     }
+    }
+   }
+  },
+  {
+   "input": {
+    "headliner": "St. Vincent",
+    "city": "Austin, Texas",
+    "venue_capacity": 800,
+    "size_filter": "on (Qloo popularity <= 0.975)",
+    "weights": {
+     "taste": 0.5,
+     "local": 0.3,
+     "practical": 0.2
+    }
+   },
+   "status": "ready_low_evidence",
+   "status_reason": "Searched up to region scope; only 2 of 61 candidates are verified as local. Treat the list as research, not a recommendation.",
+   "qloo_calls": [
+    {
+     "purpose": "resolve",
+     "http": 200,
+     "params": {
+      "query": "St. Vincent",
+      "types": "urn:entity:artist",
+      "take": 10
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "DE760AA8-B642-4CC4-9D9D-691C2BFF3461"
+     }
+    },
+    {
+     "purpose": "discover_baseline",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "DE760AA8-B642-4CC4-9D9D-691C2BFF3461",
+      "take": 50
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "DE760AA8-B642-4CC4-9D9D-691C2BFF3461",
+      "take": 50,
+      "signal.location.query": "Austin, Texas",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "803052C1-C6C2-43F2-95F8-F0FD513E2771,66E202FD-9F73-4E20-9F7A-99CEE6FC01BF,82B8D3B3-67FB-4EC9-A35B-99E4210E25ED,2F9E6CDF-251B-41ED-8765-2A3DAB7AB5FB,C1A3D5EA-56E7-4EBD-B48E-607B8922FDD6,653B0EDD-D483-4195-BA01-C387F1337A4B,5C8CAB95-F76F-43E0-A975-4B2859C2F75D,B74DB2A2-9098-4D84-B12D-2E482A50BFD3,A157CD12-3E7D-42FD-9A2F-FAFD71960CF6,1FC8B802-705D-4F60-B313-306551F96954,7EB77FDE-3AFF-4598-B1C1-BA379CF4D518,729724D1-7184-4385-A63D-5241F61E8D8F,D7616956-175A-460E-AA85-39EE9FE773EC,22FE7366-7F67-4B43-B73B-8B6E7A4F2F55,C69EF075-A740-42A5-ADE8-76780B00FE38"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "0F44C218-5BC9-4E79-BFB5-A93D4BE8833D,8191B0BB-04FD-4CF3-8039-386168D50E8E,3378EB5C-48EC-4E1D-B302-42DF42644AE6,D80BA556-CADD-4D2B-A730-4D3E773DBC72,6415781E-A6B7-4847-B9F7-BFDE6BD80BBA,27058007-0CA4-4480-A826-D10980ED459F,4479C05D-51EC-4E1A-9DFD-3532D1B5DE26,5EA46DD2-D2E4-4E95-8A7E-5758B3799BF0,4B042506-4313-4D89-9AD2-AD81DFF655FA,4CE60D14-B414-4163-97C3-C1E51108ED90"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "DE760AA8-B642-4CC4-9D9D-691C2BFF3461",
+      "take": 50,
+      "signal.location.query": "Austin metropolitan area, Texas",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "4607C481-A992-456F-900E-46AB836351EF,7775DB0C-B4DC-4FF9-8A54-12863A95F4D8,03799700-A776-426A-822B-1242B7849970,9BF73CB5-3CB0-480C-9FAC-7B6049EA8DE2,46CC801F-F1B0-4EDE-85CE-F8A1BF28091C,1F3197B1-F98C-4642-8E7B-FE55A2F02A4F,9FB94508-17AC-401E-8206-92A360F57181,B81E8292-5AF7-4F20-92DE-6A7C0984FD93,4D9D4E1C-549E-4EB2-A6CD-FD098233EF60,B74DB2A2-9098-4D84-B12D-2E482A50BFD3,98CC41C3-C16E-4ED7-8D90-7843819939CF,8DF29294-17BA-45BF-B5A4-2C9C87DF6A82,32BB0A1E-F56D-4716-A08F-CFCD6CB640C7,A5D69BFA-8BD8-432E-AD3A-1DED52EE093B,7BDB8927-518C-443D-AF47-302420FF3511"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "364D77FF-5965-4941-B0C3-42C7834EB61B,28BA6AF9-CC9D-4054-AB62-606C414204E6,7551DF8B-1740-48EA-85AD-AE593A50879E,8191B0BB-04FD-4CF3-8039-386168D50E8E,439B0512-6BC4-4236-A249-CBF1AC9252FC,8FBA1F6C-9F0F-4701-8928-BD72F4EEFC34,FBCDE8A0-9D16-49B7-88EF-DF21B0A868AE,F8CD3A53-5E6D-4AD0-84EE-8D04AC65CAE8,C2CF0266-5D80-479A-A719-B5C30A474624,12771D66-C4FB-4BFD-B88F-1680E5342A94"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "DE760AA8-B642-4CC4-9D9D-691C2BFF3461",
+      "take": 50,
+      "signal.location.query": "Texas",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "803052C1-C6C2-43F2-95F8-F0FD513E2771,66E202FD-9F73-4E20-9F7A-99CEE6FC01BF,82B8D3B3-67FB-4EC9-A35B-99E4210E25ED,2F9E6CDF-251B-41ED-8765-2A3DAB7AB5FB,5C8CAB95-F76F-43E0-A975-4B2859C2F75D,B74DB2A2-9098-4D84-B12D-2E482A50BFD3,C1A3D5EA-56E7-4EBD-B48E-607B8922FDD6,7EB77FDE-3AFF-4598-B1C1-BA379CF4D518,653B0EDD-D483-4195-BA01-C387F1337A4B,C69EF075-A740-42A5-ADE8-76780B00FE38,22FE7366-7F67-4B43-B73B-8B6E7A4F2F55,D7616956-175A-460E-AA85-39EE9FE773EC,A157CD12-3E7D-42FD-9A2F-FAFD71960CF6,8191B0BB-04FD-4CF3-8039-386168D50E8E,729724D1-7184-4385-A63D-5241F61E8D8F"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "0F44C218-5BC9-4E79-BFB5-A93D4BE8833D,4B042506-4313-4D89-9AD2-AD81DFF655FA,3378EB5C-48EC-4E1D-B302-42DF42644AE6,1FC8B802-705D-4F60-B313-306551F96954,27058007-0CA4-4480-A826-D10980ED459F,2CCDFC56-46DC-4D53-A6E3-3950360BCD3B,D80BA556-CADD-4D2B-A730-4D3E773DBC72,7FF9A9FB-0232-4B71-B21E-3026CA9619AD,4479C05D-51EC-4E1A-9DFD-3532D1B5DE26,E19A98C0-6304-4B45-BD9D-5099156E591A"
+     }
+    },
+    {
+     "purpose": "discover_location",
+     "http": 200,
+     "params": {
+      "filter.type": "urn:entity:artist",
+      "signal.interests.entities": "7FF9A9FB-0232-4B71-B21E-3026CA9619AD",
+      "take": 50,
+      "signal.location.query": "Texas",
+      "filter.popularity.max": 0.975
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "5F522BBF-F983-4E0C-B44B-39426491F268,1E1F5C06-8BA7-43BC-BF45-A8D5E393744B,D1E5DC37-59FD-42B6-8159-F9594733EE66,307D43E4-6A18-4FDB-82BA-7CBD9A2A8D82,631F68EF-5085-4371-8F97-CC5B2068825C,BFAF3627-214B-4863-A854-148B59D532A9,77F578B6-F91E-4D61-BB07-2633B92291AA,B71E432C-8227-4217-A22D-1908379EE9AB,EB3382E2-6A89-427D-BB88-BAA4A5843E44,3FA655FD-C2B3-4B98-841F-13576854BDC9,B8AC3630-1948-4D6D-B009-84A2518EA21D,670DDD55-1EB7-4C2C-9BD7-C998D849AF87,8F858BFF-838C-4BE6-8D88-83002CFC7675,B0983E75-B0AF-41A6-844C-147DECDBC07E,946CF1F8-E668-4617-9C91-464C10ACD492,CB14B11A-B0FA-43BC-AFC0-92BEAEFF391D,6720CD9E-29CC-4162-B035-75136FE7DD4A,F9FF5BDD-0D59-4560-8861-D1B1D2580ABB,B9C85333-0E78-4DC3-961C-C13CB7939BC5,98329413-3BB4-4F37-AC8D-8AC319407A38"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "3CF76DB2-973E-48DC-B390-4E4EE14AC685,5FB0A7DA-C7F0-487B-80C4-CA893D1BC56B,2CD563F9-B62E-4D02-8FA0-63BB8D9FCB0D,E9A4FE67-D99F-41B7-BAF8-CFD2B5794E78,43B4C7E9-3C9B-44FF-8075-144ACCCAF26D,68FF1EBB-DE0E-43E9-B5D1-BF7FAA501D4E,05915F60-BBA3-4882-82A6-D03D58FDD620,A8E28084-EF7F-4F84-A402-6EE44040ED23,5B6EEA4B-5E25-4151-A9F6-65A18015A0D2,7CB5A4F4-73A2-4A21-BD62-8B1FC5C2311D,08879395-5D66-4462-8997-5884E9FDEEDA,439CE622-4BD3-49EB-8DE1-8191FA638898,CDF1678A-FBA9-4831-A998-B683EB7586CB,0D1827BA-878C-444E-A4E9-0031458900C4,B58187DB-D2B9-42FF-B0F6-4875D30A936D,A76A0D94-FB08-4553-A583-D0879ED4E6E8,6B9F0329-BC0E-4392-AAB4-6ED676C52553,1973D09C-4CB9-4D33-ADA0-26B62E2994A9,F8CEE9C0-A3FD-4858-8413-AEE86A3E125D,279524FE-E951-48BD-954E-41EA29B7CFDE"
+     }
+    },
+    {
+     "purpose": "entities",
+     "http": 200,
+     "params": {
+      "entity_ids": "DEC9327E-7655-404C-80A5-3BF128A5DE00"
+     }
+    }
+   ],
+   "agent_decisions": [
+    "Looking up 'St. Vincent' in Qloo",
+    "Matched headliner to Qloo entity 'St. Vincent'",
+    "Read St. Vincent's Qloo taste profile: 26 tags, e.g. Indie Pop, Indie, Singer & Songwriter, Dedicated, Eclectic, Artistic",
+    "Asking Qloo for artists St. Vincent fans like, weighted to Austin, Texas (city scope)",
+    "Qloo returned 50 artists; checking the top 15 first (11 of them appear only with the location signal)",
+    "Re-checked 15 of 15 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (15 artists)",
+    "Checked 44 sources: 0 verified 'based here now', 0 verified 'from / formed here', 5 verified 'played here', 9 unverified, 15 rejected",
+    "0 of the 3 verified local acts needed. Small local acts often sit lower in Qloo's list, so checking the next 10 for Austin, Texas before widening",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a city-level connection (10 artists)",
+    "Checked 25 sources: 0 verified 'based here now', 0 verified 'from / formed here', 5 verified 'played here', 5 unverified, 6 rejected",
+    "0 of the 3 verified local acts needed after checking Qloo's list for city, so the search widens to metro",
+    "Asking Qloo for artists St. Vincent fans like, weighted to Austin metropolitan area, Texas (metro scope)",
+    "Qloo returned 50 artists; checking the top 15 first (15 of them appear only with the location signal)",
+    "Re-checked 15 of 15 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a metro-level connection (15 artists)",
+    "Checked 44 sources: 0 verified 'based here now', 0 verified 'from / formed here', 11 verified 'played here', 6 unverified, 11 rejected",
+    "0 of the 3 verified local acts needed. Small local acts often sit lower in Qloo's list, so checking the next 10 for Austin metropolitan area, Texas before widening",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a metro-level connection (10 artists)",
+    "Checked 17 sources: 0 verified 'based here now', 0 verified 'from / formed here', 3 verified 'played here', 4 unverified, 3 rejected",
+    "0 of the 3 verified local acts needed after checking Qloo's list for metro, so the search widens to region",
+    "Asking Qloo for artists St. Vincent fans like, weighted to Texas (region scope)",
+    "Qloo returned 50 artists; checking the top 15 first (11 of them appear only with the location signal)",
+    "Re-checked 15 of 15 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a region-level connection (15 artists)",
+    "Checked 45 sources: 0 verified 'based here now', 0 verified 'from / formed here', 4 verified 'played here', 12 unverified, 14 rejected",
+    "0 of the 3 verified local acts needed. Small local acts often sit lower in Qloo's list, so checking the next 10 for Texas before widening",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a region-level connection (10 artists)",
+    "Checked 33 sources: 1 verified 'based here now', 0 verified 'from / formed here', 7 verified 'played here', 7 unverified, 9 rejected",
+    "Expanding from the verified local act Molly Burch: Qloo found 41 new artists their fans like in Texas; checking the 10 whose Qloo taste tags overlap most with St. Vincent",
+    "Re-checked 10 of 10 artists with Qloo /entities and compared their taste tags with the headliner's",
+    "Checking sources for a region-level connection (10 artists)",
+    "Checked 25 sources: 0 verified 'based here now', 2 verified 'from / formed here', 6 verified 'played here', 5 unverified, 1 rejected",
+    "Searched up to region scope; only 2 of 61 candidates are verified as local. Treat the list as research, not a recommendation.",
+    "Web searches: 0 paid, 122 from the cache (budget 100 per run)"
+   ],
+   "candidates_considered": 61,
+   "top_15_as_ranked": [
+    {
+     "artist": "Molly Burch",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 23,
+     "rank_without_city": null,
+     "qloo_popularity": 0.915,
+     "spotify_monthly_listeners": 236257,
+     "tag_overlap_with_headliner": 0.125,
+     "shared_tags": [
+      "Singer & Songwriter",
+      "Indie",
+      "Expressive"
+     ],
+     "scores": {
+      "taste": 0.439,
+      "local": 1.0,
+      "size": 0.9,
+      "total": 0.7
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "based_here",
+      "source": "public",
+      "quote": "Austin-based (via Los Angeles) singer songwriter Molly Burch has been out on the road this past month, in support of her debut album Please Be Mine.",
+      "url": "https://www.anchrmagazine.com/interviews/2017/3/20/a-chat-with-molly-burch"
+     },
+     "played_city": {
+      "quote": "Molly Burch - Try (Live at Bell Tree Studio Austin, TX 2016).",
+      "url": "https://www.youtube.com/watch?v=V3Mw9nmsJlA"
+     }
+    },
+    {
+     "artist": "Why Bonnie",
+     "found_via": "scene",
+     "scene_seed": "Molly Burch",
+     "qloo_rank_in_its_list": 50,
+     "rank_without_city": null,
+     "qloo_popularity": 0.713,
+     "spotify_monthly_listeners": 6324,
+     "tag_overlap_with_headliner": 0.375,
+     "shared_tags": [
+      "Indie Pop",
+      "Indie",
+      "Indie Rock",
+      "Alternative Rock",
+      "Atmospheric",
+      "Expressive"
+     ],
+     "scores": {
+      "taste": 0.375,
+      "local": 0.8,
+      "size": 0.9,
+      "total": 0.608
+     },
+     "verified_local": true,
+     "local_claim": {
+      "kind": "formed_here",
+      "source": "musicbrainz",
+      "quote": "Begin area: Austin",
+      "url": "https://musicbrainz.org/artist/ac23ff2a-1174-4f3b-8bba-a2470333cb60"
+     },
+     "played_city": null
+    },
+    {
+     "artist": "Suki Waterhouse",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 1,
+     "rank_without_city": null,
+     "qloo_popularity": 0.963,
+     "spotify_monthly_listeners": 113773,
+     "tag_overlap_with_headliner": 0.125,
+     "shared_tags": [
+      "Indie Pop",
+      "Expressive",
+      "Electropop"
+     ],
+     "scores": {
+      "taste": 0.65,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.595
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "The video captures a live musical performance by Suki Waterhouse at the Austin City Limits (ACL) Music Festival.",
+      "url": "https://www.facebook.com/aclfestival/videos/a-woman-of-the-people-suki-waterhouse-loch-key/1111420385153233"
+     }
+    },
+    {
+     "artist": "Caroline Rose",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 11,
+     "rank_without_city": null,
+     "qloo_popularity": 0.957,
+     "spotify_monthly_listeners": 450151,
+     "tag_overlap_with_headliner": 0.462,
+     "shared_tags": [
+      "Singer & Songwriter",
+      "Indie Pop",
+      "Indie",
+      "Indie Rock",
+      "Alternative Rock",
+      "Eclectic"
+     ],
+     "scores": {
+      "taste": 0.644,
+      "local": 0.3,
+      "size": 0.9,
+      "total": 0.592
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "## Caroline Rose at ACL Live at The Moody Theater, Austin, TX, USA",
+      "url": "https://www.setlist.fm/setlists/caroline-rose-1bddf9a0.html"
+     }
+    },
+    {
+     "artist": "Ramona Lisa",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 2,
+     "rank_without_city": 39,
+     "qloo_popularity": 0.89,
+     "spotify_monthly_listeners": 5026,
+     "tag_overlap_with_headliner": 0.167,
+     "shared_tags": [
+      "Indie",
+      "Experimental",
+      "Open-Minded",
+      "Artistic"
+     ],
+     "scores": {
+      "taste": 0.667,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.589
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "ramona lisa Music April 25, The radio show, which primarily features Austin artists, airs every Sunday at 9pm on 101.5 FM and 101X.com.",
+      "url": "https://sideonetrackone.com/tag/ramona-lisa"
+     }
+    },
+    {
+     "artist": "Kim Gordon",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 11,
+     "rank_without_city": null,
+     "qloo_popularity": 0.941,
+     "spotify_monthly_listeners": 26262,
+     "tag_overlap_with_headliner": 0.385,
+     "shared_tags": [
+      "Alternative Rock",
+      "Indie Rock",
+      "Experimental",
+      "Innovative",
+      "Expressive",
+      "Artistic"
+     ],
+     "scores": {
+      "taste": 0.665,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.588
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Kim Gordon performs live at Austin Psych Fest on Saturday, Day 2 of the festival at the Far Out Lounge in Austin, Texas.",
+      "url": "https://www.youtube.com/watch?v=VGoLIgYh3kQ"
+     }
+    },
+    {
+     "artist": "Alaska Thunderfuck",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 22,
+     "rank_without_city": null,
+     "qloo_popularity": 0.967,
+     "spotify_monthly_listeners": 151993,
+     "tag_overlap_with_headliner": null,
+     "shared_tags": [],
+     "scores": {
+      "taste": 0.746,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.583
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Mary Timony",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 23,
+     "rank_without_city": null,
+     "qloo_popularity": 0.918,
+     "spotify_monthly_listeners": 4788,
+     "tag_overlap_with_headliner": 0.522,
+     "shared_tags": [
+      "Singer & Songwriter",
+      "Indie",
+      "Indie Rock",
+      "Alternative Rock",
+      "Experimental",
+      "Innovative"
+     ],
+     "scores": {
+      "taste": 0.647,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.579
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Get the Mary Timony Setlist of the concert at Stubb's Bar-B-Q, Austin , TX, USA on August 2, 2002 and other Mary Timony Setlists for free on setlist.fm!",
+      "url": "https://www.rockinconcerts.com/mary-timony-2007-05-25-cd-austin-audience.html"
+     }
+    },
+    {
+     "artist": "Rostam",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 14,
+     "rank_without_city": null,
+     "qloo_popularity": 0.941,
+     "spotify_monthly_listeners": 3238,
+     "tag_overlap_with_headliner": null,
+     "shared_tags": [],
+     "scores": {
+      "taste": 0.724,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.572
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Eleanor Friedberger",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 1,
+     "rank_without_city": 12,
+     "qloo_popularity": 0.95,
+     "spotify_monthly_listeners": 46388,
+     "tag_overlap_with_headliner": 0.304,
+     "shared_tags": [
+      "Indie",
+      "Indie Rock",
+      "Alternative Rock",
+      "Engaging",
+      "Expressive",
+      "Artistic"
+     ],
+     "scores": {
+      "taste": 0.722,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.571
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Blood Diamonds",
+     "found_via": "qloo_deeper",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 20,
+     "rank_without_city": null,
+     "qloo_popularity": 0.935,
+     "spotify_monthly_listeners": 39753,
+     "tag_overlap_with_headliner": null,
+     "shared_tags": [],
+     "scores": {
+      "taste": 0.75,
+      "local": 0.0,
+      "size": 0.9,
+      "total": 0.555
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Cherry Glazerr",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 8,
+     "rank_without_city": null,
+     "qloo_popularity": 0.972,
+     "spotify_monthly_listeners": 306371,
+     "tag_overlap_with_headliner": 0.304,
+     "shared_tags": [
+      "Indie Pop",
+      "Indie",
+      "Indie Rock",
+      "Alternative Rock",
+      "Dynamic",
+      "Expressive"
+     ],
+     "scores": {
+      "taste": 0.599,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.554
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Cherry Glazerr perform at The Current Day Party at Barracuda in Austin, Texas, during the 2019 SXSW music festival.",
+      "url": "https://www.youtube.com/watch?v=uB0sAO34wDU"
+     }
+    },
+    {
+     "artist": "Hinds",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 5,
+     "rank_without_city": null,
+     "qloo_popularity": 0.96,
+     "spotify_monthly_listeners": 185969,
+     "tag_overlap_with_headliner": 0.125,
+     "shared_tags": [
+      "Indie",
+      "Indie Rock",
+      "Engaging"
+     ],
+     "scores": {
+      "taste": 0.597,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.553
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "HINDS - \"Easy\" Live at the GQ Artist House 2016 in Austin, TX with Jam in",
+      "url": "https://www.youtube.com/watch?v=rQkyZQljvhU"
+     }
+    },
+    {
+     "artist": "Little Scream",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 6,
+     "rank_without_city": null,
+     "qloo_popularity": 0.89,
+     "spotify_monthly_listeners": 31097,
+     "tag_overlap_with_headliner": 0.348,
+     "shared_tags": [
+      "Singer & Songwriter",
+      "Indie Rock",
+      "Experimental",
+      "Atmospheric",
+      "Expressive",
+      "Dynamic"
+     ],
+     "scores": {
+      "taste": 0.677,
+      "local": 0.1,
+      "size": 0.9,
+      "total": 0.548
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": null
+    },
+    {
+     "artist": "Lido Pimienta",
+     "found_via": "qloo",
+     "scene_seed": null,
+     "qloo_rank_in_its_list": 14,
+     "rank_without_city": null,
+     "qloo_popularity": 0.885,
+     "spotify_monthly_listeners": 267767,
+     "tag_overlap_with_headliner": 0.231,
+     "shared_tags": [
+      "Experimental",
+      "Eclectic",
+      "Innovative",
+      "Expressive",
+      "Engaging",
+      "Dynamic"
+     ],
+     "scores": {
+      "taste": 0.587,
+      "local": 0.25,
+      "size": 0.9,
+      "total": 0.548
+     },
+     "verified_local": false,
+     "local_claim": null,
+     "played_city": {
+      "quote": "Lido Pimienta graced the Barton Springs stage at Austin City Limits Music Festival",
+      "url": "https://www.kvue.com/article/entertainment/events/austin-city-limits/lido-pimientas-acl-fest/269-f48c62da-ab8e-4044-b6d7-f362b34afa45"
+     }
+    }
+   ],
+   "sample_rejected_sources": [
+    {
+     "artist": "Molly Burch",
+     "url": "https://open.spotify.com/artist/6bEYoIUTLdcs4lZBNVw5L5",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Molly Burch",
+     "url": "https://www.bandsintown.com/a/9771889-molly-burch",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Suki Waterhouse",
+     "url": "https://www.ticketmaster.com/official-2026-acl-nights-suki-waterhouse-austin-texas-10-04-2026/event/3A0064FBD862ECD1",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Suki Waterhouse",
+     "url": "https://seatgeek.com/suki-waterhouse-tickets/austin",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Caroline Rose",
+     "url": "https://music.apple.com/it/concerts/ce.c3c26ae5-bc81-48f6-b827-aac8376f2b8e?l=en-GB",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Alaska Thunderfuck",
+     "url": "https://www.shazam.com/event/093545ce-0f54-4429-a4c4-236783889f01",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Alaska Thunderfuck",
+     "url": "https://www.livenation.com/event/G5dIZ_KvtLKFo/alaska-thunderf-ck-the-revolution-tour",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Alaska Thunderfuck",
+     "url": "https://www.axs.com/events/1608421/alaska-thunderfuck-tickets",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Eleanor Friedberger",
+     "url": "https://open.spotify.com/artist/42WJFNdxsAgcn9PfjT61Z3",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Eleanor Friedberger",
+     "url": "https://www.allmusic.com/artist/eleanor-friedberger-mn0000948780",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    },
+    {
+     "artist": "Hinds",
+     "url": "https://www.last.fm/music/Allen+Hinds/+wiki",
+     "reason": "Ticket, tour-date or streaming listing page; it does not state a connection"
+    },
+    {
+     "artist": "Lido Pimienta",
+     "url": "https://www.npr.org/2020/03/17/811261478/the-austin-100-lido-pimienta",
+     "reason": "Mentions the artist and the area but does not say the artist is from or played there"
+    }
+   ],
+   "booking_brief": {
+    "picks": {
+     "primary": "Molly Burch",
+     "backup": "Why Bonnie",
+     "alternative": "Suki Waterhouse"
+    },
+    "warnings": [],
+    "narrative": "The booking brief features St. Vincent as the headliner in Austin, Texas, at a venue with a capacity of 800. The primary support act is Molly Burch, who is local and has a Qloo rank of 23, fitting well for the slot with 236,257 monthly listeners. Backup act Why Bonnie, with a Qloo rank of 50, is also local but has not played in the area. Alternative act Suki Waterhouse, ranked 1, has performed locally and has 113,773 monthly listeners. Availability, fee, and headliner agent approval are unknown.",
+    "narrative_note": "Generated before the 29 Oct fix that stops scene-found picks being described by a Qloo rank."
+   },
+   "four_way_comparison": {
+    "scope_checked": "Texas",
+    "popularity_limit": 0.975,
+    "lists": {
+     "LLM on its own": [
+      {
+       "artist": "Shakey Graves",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Sofia Valdes",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Leon Bridges",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Black Pumas",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Margaret Glaspy",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "The Texas Gentlemen",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Kacey Musgraves",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Wild Child",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ],
+     "Qloo, no city": [
+      {
+       "artist": "Perfume Genius",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Dirty Projectors",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Ema",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Owen Pallett",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Chairlift",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Beach House",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "tUnE-yArDs",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Sufjan Stevens",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      }
+     ],
+     "Qloo with the city": [
+      {
+       "artist": "Perfume Genius",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Dirty Projectors",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Beach House",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "tUnE-yArDs",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Chairlift",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Sufjan Stevens",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Grimes",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      },
+      {
+       "artist": "Animal Collective",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": true,
+       "in_qloo": true
+      }
+     ],
+     "Opening Act": [
+      {
+       "artist": "Molly Burch",
+       "verified_local": true,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Why Bonnie",
+       "verified_local": true,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Suki Waterhouse",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Caroline Rose",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Ramona Lisa",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Kim Gordon",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Alaska Thunderfuck",
+       "verified_local": false,
+       "played_city": false,
+       "above_size_limit": false,
+       "in_qloo": true
+      },
+      {
+       "artist": "Mary Timony",
+       "verified_local": false,
+       "played_city": true,
+       "above_size_limit": false,
+       "in_qloo": true
+      }
+     ]
+    },
+    "summary": {
+     "LLM on its own": {
+      "n": 8,
+      "verified_local": 3,
+      "played_city_only": 3,
+      "too_big_for_room": 3,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 2,
+      "not_checked_budget": 0
+     },
+     "Qloo, no city": {
+      "n": 8,
+      "verified_local": 0,
+      "played_city_only": 3,
+      "too_big_for_room": 7,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 0,
+      "not_checked_budget": 0
+     },
+     "Qloo with the city": {
+      "n": 8,
+      "verified_local": 0,
+      "played_city_only": 5,
+      "too_big_for_room": 8,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 0,
+      "not_checked_budget": 0
+     },
+     "Opening Act": {
+      "n": 8,
+      "verified_local": 2,
+      "played_city_only": 5,
+      "too_big_for_room": 0,
+      "not_found_in_qloo": 0,
+      "verified_local_and_right_size": 2,
+      "not_checked_budget": 0
+     }
+    }
+   }
+  }
+ ],
+ "evidence_eval_development": {
+  "cases": [
+   {
+    "artist": "Lunar Vacation",
+    "city": "Atlanta, Georgia",
+    "expected": true,
+    "why": "Atlanta band",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "based_here: Reaching for the stars: Atlanta-based band Lunar Vacation dreams big",
+    "mb_best": "formed_here: Begin area: Atlanta",
+    "mb_context": ""
+   },
+   {
+    "artist": "girlpuppy",
+    "city": "Atlanta, Georgia",
+    "expected": true,
+    "why": "Becca Harvey, Atlanta",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "based_here: In the Atlanta-based musician's case, it's her jangle-pop alias Girlpu",
+    "mb_best": "formed_here: Begin area: Atlanta",
+    "mb_context": ""
+   },
+   {
+    "artist": "Faye Webster",
+    "city": "Atlanta, Georgia",
+    "expected": true,
+    "why": "Atlanta singer-songwriter",
+    "tavily_only": false,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "based_here: Area: Atlanta",
+    "mb_context": ""
+   },
+   {
+    "artist": "Dehd",
+    "city": "Atlanta, Georgia",
+    "expected": false,
+    "why": "Chicago band; a member spoke of being from Atlanta",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Dehd's begin area as Chicago"
+   },
+   {
+    "artist": "Soccer Mommy",
+    "city": "Atlanta, Georgia",
+    "expected": false,
+    "why": "Nashville act that played Atlanta",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Soccer Mommy's begin area as Zurich"
+   },
+   {
+    "artist": "Mitski",
+    "city": "Atlanta, Georgia",
+    "expected": false,
+    "why": "touring act",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Mitski's begin area as Mie"
+   },
+   {
+    "artist": "Soccer Mommy",
+    "city": "Nashville, Tennessee",
+    "expected": true,
+    "why": "Nashville",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Soccer Mommy's begin area as Zurich"
+   },
+   {
+    "artist": "All Them Witches",
+    "city": "Nashville, Tennessee",
+    "expected": true,
+    "why": "Nashville band",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: All Them Witches is an American rock band from Nashville, Tennessee.",
+    "mb_best": "formed_here: Begin area: Nashville",
+    "mb_context": ""
+   },
+   {
+    "artist": "Ron Gallo",
+    "city": "Nashville, Tennessee",
+    "expected": true,
+    "why": "Philadelphia-born, lives in Nashville",
+    "tavily_only": true,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "based_here: Meet Ron Gallo, the Nashville-based musician voicing a revv’d up headf",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Ron Gallo's begin area as New Jersey; MusicBrainz associates Ron Gallo with Philadelphia"
+   },
+   {
+    "artist": "The Nude Party",
+    "city": "Nashville, Tennessee",
+    "expected": false,
+    "why": "North Carolina / New York; label is Nashville-based",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz associates The Nude Party with New York"
+   },
+   {
+    "artist": "Whitney",
+    "city": "Nashville, Tennessee",
+    "expected": false,
+    "why": "Chicago band; name collides with Whitney Houston",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": ""
+   },
+   {
+    "artist": "Brittany Howard",
+    "city": "Nashville, Tennessee",
+    "expected": true,
+    "why": "Athens AL native living in Nashville (check)",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Brittany Howard's begin area as Athens"
+   },
+   {
+    "artist": "Shakey Graves",
+    "city": "Austin, Texas",
+    "expected": true,
+    "why": "Austin",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: Shakey Graves (born Alejandro Rose-Garcia; June 4, 1987) is an America",
+    "mb_best": "formed_here: Begin area: Austin",
+    "mb_context": ""
+   },
+   {
+    "artist": "Black Pumas",
+    "city": "Austin, Texas",
+    "expected": true,
+    "why": "Austin band",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "based_here: Black Pumas is an American psychedelic soul band based in Austin, Texa",
+    "mb_best": "formed_here: Begin area: Austin",
+    "mb_context": ""
+   },
+   {
+    "artist": "Suki Waterhouse",
+    "city": "Austin, Texas",
+    "expected": false,
+    "why": "London/LA; played ACL Fest",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Suki Waterhouse's begin area as Hammersmith"
+   },
+   {
+    "artist": "Girlpool",
+    "city": "Austin, Texas",
+    "expected": false,
+    "why": "Los Angeles; an Austin blog wrote about them",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": ""
+   },
+   {
+    "artist": "Tennis",
+    "city": "Austin, Texas",
+    "expected": false,
+    "why": "Denver band; name collides with the sport",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Tennis's begin area as Denver"
+   }
+  ],
+  "summary": {
+   "tavily_only": {
+    "checked": 17,
+    "true_positives": 6,
+    "false_positives": [],
+    "missed": [
+     "Faye Webster/Atlanta",
+     "Soccer Mommy/Nashville",
+     "Brittany Howard/Nashville"
+    ],
+    "precision": 1.0,
+    "recall": 0.6666666666666666
+   },
+   "musicbrainz_only": {
+    "checked": 17,
+    "true_positives": 6,
+    "false_positives": [],
+    "missed": [
+     "Soccer Mommy/Nashville",
+     "Ron Gallo/Nashville",
+     "Brittany Howard/Nashville"
+    ],
+    "precision": 1.0,
+    "recall": 0.6666666666666666
+   },
+   "tavily_plus_mb": {
+    "checked": 17,
+    "true_positives": 7,
+    "false_positives": [],
+    "missed": [
+     "Soccer Mommy/Nashville",
+     "Brittany Howard/Nashville"
+    ],
+    "precision": 1.0,
+    "recall": 0.7777777777777778
+   }
+  },
+  "usage": {
+   "live_searches": 0,
+   "cached_searches": 34,
+   "limit": 5,
+   "exhausted": false
+  },
+  "musicbrainz": {
+   "live": 0,
+   "cached": 17,
+   "errors": 0
+  }
+ },
+ "evidence_eval_heldout": {
+  "cases": [
+   {
+    "artist": "Alex G",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": true,
+    "why": "Philadelphia-area songwriter",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Alex G's begin area as Havertown"
+   },
+   {
+    "artist": "Hop Along",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": true,
+    "why": "Philadelphia band",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: Hop Along is a band from Philadelphia made up of Frances Quinlan (song",
+    "mb_best": "formed_here: Begin area: Philadelphia",
+    "mb_context": ""
+   },
+   {
+    "artist": "The War on Drugs",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": true,
+    "why": "formed in Philadelphia",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: The War on Drugs is an American rock band from Philadelphia which was ",
+    "mb_best": "formed_here: Begin area: Philadelphia",
+    "mb_context": ""
+   },
+   {
+    "artist": "Kurt Vile",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": true,
+    "why": "Philadelphia-area musician",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Kurt Vile's begin area as Lansdowne"
+   },
+   {
+    "artist": "Mannequin Pussy",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": true,
+    "why": "Philadelphia band",
+    "tavily_only": true,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: Mannequin Pussy is an American punk and indie rock band from Philadelp",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Mannequin Pussy's begin area as New York"
+   },
+   {
+    "artist": "Sheer Mag",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": true,
+    "why": "Philadelphia band",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: Sheer Mag is an American rock band from Philadelphia formed in 2014.",
+    "mb_best": "formed_here: Begin area: Philadelphia",
+    "mb_context": ""
+   },
+   {
+    "artist": "Snail Mail",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": false,
+    "why": "Baltimore act",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Snail Mail's begin area as Baltimore"
+   },
+   {
+    "artist": "Big Thief",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": false,
+    "why": "Brooklyn band",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Big Thief's begin area as Brooklyn"
+   },
+   {
+    "artist": "Waxahatchee",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": false,
+    "why": "Alabama / Kansas City",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Waxahatchee's begin area as Birmingham; MusicBrainz associates Waxahatchee with Brooklyn"
+   },
+   {
+    "artist": "Soccer Mommy",
+    "city": "Philadelphia, Pennsylvania",
+    "expected": false,
+    "why": "Nashville act",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Soccer Mommy's begin area as Zurich"
+   },
+   {
+    "artist": "Whitney",
+    "city": "Chicago, Illinois",
+    "expected": true,
+    "why": "Chicago band",
+    "tavily_only": true,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: Revered in their hometown of Chicago, the Mayor of the city created a ",
+    "mb_best": "",
+    "mb_context": ""
+   },
+   {
+    "artist": "Dehd",
+    "city": "Chicago, Illinois",
+    "expected": true,
+    "why": "Chicago band",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "based_here: Chicago-based band Dehd celebrates its 10th anniversary.",
+    "mb_best": "formed_here: Begin area: Chicago",
+    "mb_context": ""
+   },
+   {
+    "artist": "Ratboys",
+    "city": "Chicago, Illinois",
+    "expected": true,
+    "why": "Chicago band",
+    "tavily_only": true,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "based_here: Steiner is the lead singer, songwriter and rhythm guitarist for the Ch",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Ratboys's begin area as South Bend"
+   },
+   {
+    "artist": "Twin Peaks",
+    "city": "Chicago, Illinois",
+    "expected": true,
+    "why": "Chicago band (name collides with the TV show)",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "formed_here: Twin Peaks is an American indie rock band from Chicago, Illinois.",
+    "mb_best": "formed_here: Begin area: Chicago",
+    "mb_context": ""
+   },
+   {
+    "artist": "Wilco",
+    "city": "Chicago, Illinois",
+    "expected": true,
+    "why": "Chicago band",
+    "tavily_only": true,
+    "musicbrainz_only": true,
+    "tavily_plus_mb": true,
+    "web_note": "",
+    "web_best": "based_here: Wilco is an American rock band based in Chicago.",
+    "mb_best": "formed_here: Begin area: Chicago",
+    "mb_context": ""
+   },
+   {
+    "artist": "Tennis",
+    "city": "Chicago, Illinois",
+    "expected": false,
+    "why": "Denver band",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Tennis's begin area as Denver"
+   },
+   {
+    "artist": "Faye Webster",
+    "city": "Chicago, Illinois",
+    "expected": false,
+    "why": "Atlanta",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz associates Faye Webster with Atlanta"
+   },
+   {
+    "artist": "Alex G",
+    "city": "Chicago, Illinois",
+    "expected": false,
+    "why": "Philadelphia",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Alex G's begin area as Havertown"
+   },
+   {
+    "artist": "Hop Along",
+    "city": "Chicago, Illinois",
+    "expected": false,
+    "why": "Philadelphia",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Hop Along's begin area as Philadelphia"
+   },
+   {
+    "artist": "Lunar Vacation",
+    "city": "Chicago, Illinois",
+    "expected": false,
+    "why": "Atlanta",
+    "tavily_only": false,
+    "musicbrainz_only": false,
+    "tavily_plus_mb": false,
+    "web_note": "",
+    "web_best": "",
+    "mb_best": "",
+    "mb_context": "MusicBrainz lists Lunar Vacation's begin area as Atlanta"
+   }
+  ],
+  "summary": {
+   "tavily_only": {
+    "checked": 20,
+    "true_positives": 9,
+    "false_positives": [],
+    "missed": [
+     "Alex G/Philadelphia",
+     "Kurt Vile/Philadelphia"
+    ],
+    "precision": 1.0,
+    "recall": 0.8181818181818182
+   },
+   "musicbrainz_only": {
+    "checked": 20,
+    "true_positives": 6,
+    "false_positives": [],
+    "missed": [
+     "Alex G/Philadelphia",
+     "Kurt Vile/Philadelphia",
+     "Mannequin Pussy/Philadelphia",
+     "Whitney/Chicago",
+     "Ratboys/Chicago"
+    ],
+    "precision": 1.0,
+    "recall": 0.5454545454545454
+   },
+   "tavily_plus_mb": {
+    "checked": 20,
+    "true_positives": 9,
+    "false_positives": [],
+    "missed": [
+     "Alex G/Philadelphia",
+     "Kurt Vile/Philadelphia"
+    ],
+    "precision": 1.0,
+    "recall": 0.8181818181818182
+   }
+  },
+  "usage": {
+   "live_searches": 0,
+   "cached_searches": 40,
+   "limit": 5,
+   "exhausted": false
+  },
+  "musicbrainz": {
+   "live": 0,
+   "cached": 20,
+   "errors": 0
+  }
+ },
+ "blind_rating": {
+  "judge": "ChatGPT (GPT-4o class), blind to method",
+  "prompt": "You are an experienced talent buyer for independent music venues in the United States.\n\nTask: rate 12 candidate lists of SUPPORT (opening) acts. Each list has 8 artists proposed as openers for a headliner at an 800-capacity venue in the given city. The lists come from different methods; you are not told which. Judge only the artists.\n\nFor EACH list give two scores from 1 to 5:\n- fit: would fans of the headliner enjoy these artists? (1 = poor musical/audience fit, 5 = excellent fit)\n- useful: how useful is this list for booking a real opening act for an 800-capacity room in that city? Consider whether the artists are realistic openers at that size (acts far too big to open are not useful), and whether they are plausible for that city/region. (1 = useless, 5 = I would book from this list)\n\nRules:\n- Score every list independently; do not compare lengths or guess the method.\n- Do not search the web; use your own knowledge. If you do not know an artist, say so in the note rather than guessing.\n- Answer ONLY with CSV, no other text, exactly in this format with a header row:\ncity,headliner,venue_capacity,list,fit_with_headliner_1to5,useful_as_support_shortlist_1to5,notes\nUse the city text exactly as given (in double quotes, e.g. \"Nashville, Tennessee\"), venue_capacity 800, list as the single letter, scores as whole numbers 1-5, and a short note in double quotes.\n\nLists (city | headliner | list | artists):\nNashville, Tennessee | Khruangbin | List A | Neal Francis; Cory Wong; The Nude Party; Hermanos Gutiérrez; TWEN; Becca Mancari; Ron Gallo; Sam Evian\nNashville, Tennessee | Khruangbin | List B | Mildlife; SAULT; Robohands; Thee Sacred Souls; Arc De Soleil; Common Saints; KOKOROKO; Glass Beams\nNashville, Tennessee | Khruangbin | List C | Nikki Lane; The Lone Bellow; Kelsey Waldon; Maggie Rose; Yola; Treetop Flyers; The Black Lillies; The Wild Feathers\nNashville, Tennessee | Khruangbin | List D | Hiatus Kaiyote; Kikagaku Moyo; Glass Beams; SAULT; Mk.gee; Vulfpeck; Black Pumas; Brittany Howard\nAtlanta, Georgia | Japanese Breakfast | List A | Mitski; Soccer Mommy; Alvvays; beabadoobee; Samia; Jay Som; Snail Mail; sasami\nAtlanta, Georgia | Japanese Breakfast | List B | Okey Dokey; Caroline Rose; Mamalarky; Dehd; Lunar Vacation; girlpuppy; sasami; Rostam\nAtlanta, Georgia | Japanese Breakfast | List C | Phoebe Bridgers; Faye Webster; Lucy Dacus; Big Thief; sasami; Jay Som; Mitski; Soccer Mommy\nAtlanta, Georgia | Japanese Breakfast | List D | The Districts; Pinegrove; Snail Mail; Alvvays; Japanese Breakfast; Soccer Mommy; Mitski; Faye Webster\nAustin, Texas | St. Vincent | List A | Kacey Musgraves; Wild Child; Sofia Valdes; Leon Bridges; Shakey Graves; Margaret Glaspy; The Texas Gentlemen; Black Pumas\nAustin, Texas | St. Vincent | List B | Caroline Rose; Kim Gordon; Mary Timony; Molly Burch; Suki Waterhouse; Alaska Thunderfuck; Ramona Lisa; Why Bonnie\nAustin, Texas | St. Vincent | List C | tUnE-yArDs; Ema; Dirty Projectors; Chairlift; Sufjan Stevens; Owen Pallett; Perfume Genius; Beach House\nAustin, Texas | St. Vincent | List D | Animal Collective; tUnE-yArDs; Perfume Genius; Beach House; Dirty Projectors; Chairlift; Sufjan Stevens; Grimes\n",
+  "ratings": [
+   {
+    "city": "Nashville, Tennessee",
+    "list": "A",
+    "method": "Opening Act",
+    "artists": "Neal Francis; Cory Wong; The Nude Party; Hermanos Gutiérrez; TWEN; Becca Mancari; Ron Gallo; Sam Evian",
+    "fit": 4,
+    "useful": 4,
+    "judge_note": "Strong psychedelic and groove-oriented mix; several credible regional acts, though some stylistic variation."
+   },
+   {
+    "city": "Nashville, Tennessee",
+    "list": "B",
+    "method": "Qloo, no city",
+    "artists": "Mildlife; SAULT; Robohands; Thee Sacred Souls; Arc De Soleil; Common Saints; KOKOROKO; Glass Beams",
+    "fit": 5,
+    "useful": 3,
+    "judge_note": "Excellent global psych, funk and soul alignment; several acts are niche or may be difficult to book, and local relevance is uncertain."
+   },
+   {
+    "city": "Nashville, Tennessee",
+    "list": "C",
+    "method": "LLM on its own",
+    "artists": "Nikki Lane; The Lone Bellow; Kelsey Waldon; Maggie Rose; Yola; Treetop Flyers; The Black Lillies; The Wild Feathers",
+    "fit": 3,
+    "useful": 4,
+    "judge_note": "Strong Americana and country-soul talent, but the overall sound is less aligned with Khruangbin's instrumental psychedelic grooves."
+   },
+   {
+    "city": "Nashville, Tennessee",
+    "list": "D",
+    "method": "Qloo with the city",
+    "artists": "Hiatus Kaiyote; Kikagaku Moyo; Glass Beams; SAULT; Mk.gee; Vulfpeck; Black Pumas; Brittany Howard",
+    "fit": 5,
+    "useful": 2,
+    "judge_note": "Excellent adventurous funk and psych connections, but Vulfpeck, Black Pumas and Brittany Howard are likely too established or large for this opening slot."
+   },
+   {
+    "city": "Atlanta, Georgia",
+    "list": "A",
+    "method": "Qloo, no city",
+    "artists": "Mitski; Soccer Mommy; Alvvays; beabadoobee; Samia; Jay Som; Snail Mail; sasami",
+    "fit": 5,
+    "useful": 2,
+    "judge_note": "Excellent indie-pop and art-rock fit, but Mitski, Alvvays, beabadoobee and several others are too established to be realistic openers."
+   },
+   {
+    "city": "Atlanta, Georgia",
+    "list": "B",
+    "method": "Opening Act",
+    "artists": "Okey Dokey; Caroline Rose; Mamalarky; Dehd; Lunar Vacation; girlpuppy; sasami; Rostam",
+    "fit": 4,
+    "useful": 5,
+    "judge_note": "A credible indie and art-pop shortlist with promising regional acts including Mamalarky, Lunar Vacation and girlpuppy; strongest practical booking mix."
+   },
+   {
+    "city": "Atlanta, Georgia",
+    "list": "C",
+    "method": "Qloo with the city",
+    "artists": "Phoebe Bridgers; Faye Webster; Lucy Dacus; Big Thief; sasami; Jay Som; Mitski; Soccer Mommy",
+    "fit": 5,
+    "useful": 1,
+    "judge_note": "Exceptional stylistic fit, but Phoebe Bridgers, Lucy Dacus, Big Thief and Mitski are far too prominent for a typical 800-capacity support slot."
+   },
+   {
+    "city": "Atlanta, Georgia",
+    "list": "D",
+    "method": "LLM on its own",
+    "artists": "The Districts; Pinegrove; Snail Mail; Alvvays; Japanese Breakfast; Soccer Mommy; Mitski; Faye Webster",
+    "fit": 4,
+    "useful": 1,
+    "judge_note": "Indie-rock connections are strong, but including Japanese Breakfast itself is inappropriate and several other acts are too established."
+   },
+   {
+    "city": "Austin, Texas",
+    "list": "A",
+    "method": "LLM on its own",
+    "artists": "Kacey Musgraves; Wild Child; Sofia Valdes; Leon Bridges; Shakey Graves; Margaret Glaspy; The Texas Gentlemen; Black Pumas",
+    "fit": 3,
+    "useful": 2,
+    "judge_note": "Eclectic lineup with some Texas connections, but country, soul and roots acts do not consistently match St. Vincent's art-rock sound; several are too large."
+   },
+   {
+    "city": "Austin, Texas",
+    "list": "B",
+    "method": "Opening Act",
+    "artists": "Caroline Rose; Kim Gordon; Mary Timony; Molly Burch; Suki Waterhouse; Alaska Thunderfuck; Ramona Lisa; Why Bonnie",
+    "fit": 5,
+    "useful": 4,
+    "judge_note": "Strong art-rock and alternative connections, with several plausible independent acts; Alaska Thunderfuck is a stylistic wildcard and local fit varies."
+   },
+   {
+    "city": "Austin, Texas",
+    "list": "C",
+    "method": "Qloo, no city",
+    "artists": "tUnE-yArDs; Ema; Dirty Projectors; Chairlift; Sufjan Stevens; Owen Pallett; Perfume Genius; Beach House",
+    "fit": 5,
+    "useful": 1,
+    "judge_note": "Excellent experimental art-pop alignment, but Sufjan Stevens and Beach House are far too established, with other acts also difficult to book at this scale."
+   },
+   {
+    "city": "Austin, Texas",
+    "list": "D",
+    "method": "Qloo with the city",
+    "artists": "Animal Collective; tUnE-yArDs; Perfume Genius; Beach House; Dirty Projectors; Chairlift; Sufjan Stevens; Grimes",
+    "fit": 5,
+    "useful": 1,
+    "judge_note": "Outstanding experimental and art-pop fit, but most artists are major or established touring acts and the list is largely unrealistic for an 800-capacity opener."
+   }
+  ]
+ }
+}
